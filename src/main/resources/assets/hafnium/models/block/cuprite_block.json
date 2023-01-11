@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hafnium:blocks/cuprite_ore_block",
+    "particle": "hafnium:blocks/cuprite_ore_block"
+  }
+}

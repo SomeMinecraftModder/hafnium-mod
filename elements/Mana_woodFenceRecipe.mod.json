@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Mana_woodPlanks"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:Mana_woodPlanks"
+      },
+      {
+        "value": "CUSTOM:Mana_woodPlanks"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:Mana_woodPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Mana_woodFence"
+    },
+    "name": "mana_wood_fence_recipe",
+    "namespace": "mod"
+  }
+}

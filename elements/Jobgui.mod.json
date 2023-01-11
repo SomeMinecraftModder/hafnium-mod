@@ -1,0 +1,61 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Farmer: level <VAR:integer:job_farmer_lvl>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Farmer: level <VAR:integer:job_farmer_lvl>",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Jobs",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Jobs",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Miner: level <VAR:integer:job_miner_lvl>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Miner: level <VAR:integer:job_miner_lvl>",
+          "x": 132,
+          "y": 80
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

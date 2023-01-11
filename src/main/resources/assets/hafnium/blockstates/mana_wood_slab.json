@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hafnium:block/mana_wood_slab"
+    },
+    "type=top": {
+      "model": "hafnium:block/mana_wood_slab_top"
+    },
+    "type=double": {
+      "model": "hafnium:block/mana_wood_slab_full"
+    }
+  }
+}

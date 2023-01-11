@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "hafnium:cave_block"
+    },
+    "title": {
+      "translate": "advancements.xray.title"
+    },
+    "description": {
+      "translate": "advancements.xray.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "xray": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "item": "hafnium:cave_block"
+        }
+      }
+    }
+  },
+  "parent": "minecraft:story/root"
+}

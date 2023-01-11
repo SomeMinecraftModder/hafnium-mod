@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "texture": "hafnium:blocks/mana_wood_planks"
+  }
+}

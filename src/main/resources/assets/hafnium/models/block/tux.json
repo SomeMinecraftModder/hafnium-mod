@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "up": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "north": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "east": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "south": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "west": "hafnium:blocks/58480e82cef1014c0b5e4927",
+    "particle": "hafnium:blocks/58480e82cef1014c0b5e4927"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "hafnium:blocks/mana_flower_tex",
+    "particle": "hafnium:blocks/mana_flower_tex"
+  }
+}

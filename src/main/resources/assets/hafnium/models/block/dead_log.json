@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/dead_log_top",
+    "up": "hafnium:blocks/dead_log_top",
+    "north": "hafnium:blocks/dead_log_side",
+    "east": "hafnium:blocks/dead_log_side",
+    "south": "hafnium:blocks/dead_log_side",
+    "west": "hafnium:blocks/dead_log_side",
+    "particle": "hafnium:blocks/dead_log_top"
+  }
+}

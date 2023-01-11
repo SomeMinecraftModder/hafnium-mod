@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/corrupted_dirt",
+    "up": "hafnium:blocks/corrupted_dirt",
+    "north": "hafnium:blocks/corrupted_dirt",
+    "east": "hafnium:blocks/corrupted_dirt",
+    "south": "hafnium:blocks/corrupted_dirt",
+    "west": "hafnium:blocks/corrupted_dirt",
+    "particle": "hafnium:blocks/corrupted_dirt"
+  }
+}

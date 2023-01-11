@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:chaoticmana"
+    },
+    "1": {
+      "item": "hafnium:corruption"
+    },
+    "2": {
+      "item": "hafnium:chaoticmana"
+    },
+    "3": {
+      "item": "hafnium:corruption"
+    },
+    "4": {
+      "item": "minecraft:cobblestone"
+    },
+    "5": {
+      "item": "hafnium:corruption"
+    },
+    "6": {
+      "item": "hafnium:chaoticmana"
+    },
+    "7": {
+      "item": "hafnium:corruption"
+    },
+    "8": {
+      "item": "hafnium:chaoticmana"
+    }
+  },
+  "result": {
+    "item": "hafnium:darkstone",
+    "count": 1
+  }
+}

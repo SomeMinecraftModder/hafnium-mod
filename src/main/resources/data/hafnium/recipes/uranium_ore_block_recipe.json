@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:uranium_dust"
+    },
+    "1": {
+      "item": "hafnium:uranium_dust"
+    },
+    "2": {
+      "item": "hafnium:uranium_dust"
+    },
+    "3": {
+      "item": "hafnium:uranium_dust"
+    },
+    "4": {
+      "item": "hafnium:uranium_dust"
+    },
+    "5": {
+      "item": "hafnium:uranium_dust"
+    },
+    "6": {
+      "item": "hafnium:uranium_dust"
+    },
+    "7": {
+      "item": "hafnium:uranium_dust"
+    },
+    "8": {
+      "item": "hafnium:uranium_dust"
+    }
+  },
+  "result": {
+    "item": "hafnium:uranium_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "hafnium:blocks/dead_planks",
+    "top": "hafnium:blocks/dead_planks",
+    "side": "hafnium:blocks/dead_planks"
+  }
+}

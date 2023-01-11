@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "1": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "2": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "3": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "5": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "6": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "8": {
+      "item": "hafnium:hafnium_ingot"
+    }
+  },
+  "result": {
+    "item": "hafnium:hafnium_armor_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/advanced_smelter_side_tex",
+    "up": "hafnium:blocks/advanced_smelter_side_tex",
+    "north": "hafnium:blocks/advanced_smelter_tex",
+    "east": "hafnium:blocks/advanced_smelter_side_tex",
+    "south": "hafnium:blocks/advanced_smelter_side_tex",
+    "west": "hafnium:blocks/advanced_smelter_side_tex",
+    "particle": "hafnium:blocks/advanced_smelter_side_tex"
+  }
+}

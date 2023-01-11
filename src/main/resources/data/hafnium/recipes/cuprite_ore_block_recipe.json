@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:cuprite"
+    },
+    "1": {
+      "item": "hafnium:cuprite"
+    },
+    "2": {
+      "item": "hafnium:cuprite"
+    },
+    "3": {
+      "item": "hafnium:cuprite"
+    },
+    "4": {
+      "item": "hafnium:cuprite"
+    },
+    "5": {
+      "item": "hafnium:cuprite"
+    },
+    "6": {
+      "item": "hafnium:cuprite"
+    },
+    "7": {
+      "item": "hafnium:cuprite"
+    },
+    "8": {
+      "item": "hafnium:cuprite"
+    }
+  },
+  "result": {
+    "item": "hafnium:cuprite_block",
+    "count": 1
+  }
+}

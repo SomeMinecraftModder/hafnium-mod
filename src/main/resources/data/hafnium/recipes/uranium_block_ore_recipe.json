@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hafnium:uranium_block"
+    }
+  ],
+  "result": {
+    "item": "hafnium:uranium_dust",
+    "count": 9
+  }
+}

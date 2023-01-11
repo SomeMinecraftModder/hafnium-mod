@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:mana_wood_log"
+    }
+  ],
+  "result": {
+    "item": "hafnium:mana_wood_planks",
+    "count": 4
+  }
+}

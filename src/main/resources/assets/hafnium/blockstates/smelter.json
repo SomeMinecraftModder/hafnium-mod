@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hafnium:block/smelter"
+    },
+    "facing=east": {
+      "model": "hafnium:block/smelter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hafnium:block/smelter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hafnium:block/smelter",
+      "y": 270
+    }
+  }
+}

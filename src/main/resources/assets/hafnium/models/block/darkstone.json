@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/darkstone_tex",
+    "up": "hafnium:blocks/darkstone_tex",
+    "north": "hafnium:blocks/darkstone_tex",
+    "east": "hafnium:blocks/darkstone_tex",
+    "south": "hafnium:blocks/darkstone_tex",
+    "west": "hafnium:blocks/darkstone_tex",
+    "particle": "hafnium:blocks/darkstone_tex"
+  }
+}

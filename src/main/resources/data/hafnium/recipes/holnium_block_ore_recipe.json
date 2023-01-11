@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hafnium:holnium_block"
+    }
+  ],
+  "result": {
+    "item": "hafnium:holnium",
+    "count": 9
+  }
+}

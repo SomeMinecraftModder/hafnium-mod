@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/mana_wood_leaves",
+    "up": "hafnium:blocks/mana_wood_leaves",
+    "north": "hafnium:blocks/mana_wood_leaves",
+    "east": "hafnium:blocks/mana_wood_leaves",
+    "south": "hafnium:blocks/mana_wood_leaves",
+    "west": "hafnium:blocks/mana_wood_leaves",
+    "particle": "hafnium:blocks/mana_wood_leaves"
+  }
+}

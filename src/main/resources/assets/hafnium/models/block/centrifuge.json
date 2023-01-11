@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/centrifuge_top_tex",
+    "up": "hafnium:blocks/centrifuge_top_tex",
+    "north": "hafnium:blocks/centrifuge_tex",
+    "east": "hafnium:blocks/centrifuge_tex",
+    "south": "hafnium:blocks/centrifuge_tex",
+    "west": "hafnium:blocks/centrifuge_tex",
+    "particle": "hafnium:blocks/centrifuge_top_tex"
+  }
+}

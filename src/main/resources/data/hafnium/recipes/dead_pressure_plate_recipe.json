@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:dead_planks"
+    },
+    "1": {
+      "item": "hafnium:dead_planks"
+    }
+  },
+  "result": {
+    "item": "hafnium:dead_pressure_plate",
+    "count": 1
+  }
+}

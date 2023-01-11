@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "2": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "3": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "4": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "5": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "6": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "7": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "8": {
+      "item": "hafnium:cristalized_emerald"
+    }
+  },
+  "result": {
+    "item": "hafnium:cristalized_emerald_armor_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hafnium:blocks/cristalized_emerald_ore_block",
+    "particle": "hafnium:blocks/cristalized_emerald_ore_block"
+  }
+}

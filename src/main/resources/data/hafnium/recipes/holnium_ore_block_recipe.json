@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:holnium"
+    },
+    "1": {
+      "item": "hafnium:holnium"
+    },
+    "2": {
+      "item": "hafnium:holnium"
+    },
+    "3": {
+      "item": "hafnium:holnium"
+    },
+    "4": {
+      "item": "hafnium:holnium"
+    },
+    "5": {
+      "item": "hafnium:holnium"
+    },
+    "6": {
+      "item": "hafnium:holnium"
+    },
+    "7": {
+      "item": "hafnium:holnium"
+    },
+    "8": {
+      "item": "hafnium:holnium"
+    }
+  },
+  "result": {
+    "item": "hafnium:holnium_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hafnium:block/advancedsmeltercontroler"
+    },
+    "facing=east": {
+      "model": "hafnium:block/advancedsmeltercontroler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hafnium:block/advancedsmeltercontroler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hafnium:block/advancedsmeltercontroler",
+      "y": 270
+    }
+  }
+}

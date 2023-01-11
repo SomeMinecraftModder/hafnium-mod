@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "1": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "2": {
+      "item": "hafnium:cristalized_emerald"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "hafnium:cristalized_emerald_axe",
+    "count": 1
+  }
+}

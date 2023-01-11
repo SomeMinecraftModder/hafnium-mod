@@ -1,0 +1,21 @@
+{
+  "centrifuge_effect": {
+    "category": "block",
+    "subtitle": "subtitles.centrifuge_effect",
+    "sounds": [
+      {
+        "name": "hafnium:mixkit-fast-bike-wheel-spin-1614",
+        "stream": false
+      }
+    ]
+  },
+  "ki": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "hafnium:709916271",
+        "stream": true
+      }
+    ]
+  }
+}

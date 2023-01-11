@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "hafnium:block/darkdim_portal_ew"
+    },
+    "axis=x": {
+      "model": "hafnium:block/darkdim_portal_ns"
+    }
+  }
+}

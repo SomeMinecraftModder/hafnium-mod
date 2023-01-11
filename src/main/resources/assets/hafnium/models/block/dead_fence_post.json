@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "hafnium:blocks/dead_planks",
+    "particle": "hafnium:blocks/dead_planks"
+  }
+}

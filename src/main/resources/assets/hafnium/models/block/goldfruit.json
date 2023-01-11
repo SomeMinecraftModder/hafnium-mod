@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/goldfruit_tex",
+    "up": "hafnium:blocks/goldfruit_tex",
+    "north": "hafnium:blocks/goldfruit_tex",
+    "east": "hafnium:blocks/goldfruit_tex",
+    "south": "hafnium:blocks/goldfruit_tex",
+    "west": "hafnium:blocks/goldfruit_tex",
+    "particle": "hafnium:blocks/goldfruit_tex"
+  }
+}

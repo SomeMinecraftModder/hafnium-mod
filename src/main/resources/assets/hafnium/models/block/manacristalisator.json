@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/mana_cristalisator_tex",
+    "up": "hafnium:blocks/mana_cristalisator_tex",
+    "north": "hafnium:blocks/mana_cristalisator_tex",
+    "east": "hafnium:blocks/mana_cristalisator_tex",
+    "south": "hafnium:blocks/mana_cristalisator_tex",
+    "west": "hafnium:blocks/mana_cristalisator_tex",
+    "particle": "hafnium:blocks/mana_cristalisator_tex"
+  }
+}

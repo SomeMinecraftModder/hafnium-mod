@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hafnium:blocks/mana_wood_planks",
+    "particle": "hafnium:blocks/mana_wood_planks"
+  }
+}

@@ -1,0 +1,2412 @@
+{
+  "mod_elements": [
+    {
+      "name": "HafniumIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_ingot"
+    },
+    {
+      "name": "HafniumOre",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_ore"
+    },
+    {
+      "name": "HafniumBlock",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_block"
+    },
+    {
+      "name": "HafniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_ore_block_recipe"
+    },
+    {
+      "name": "HafniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_block_ore_recipe"
+    },
+    {
+      "name": "HafniumPickaxe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_pickaxe"
+    },
+    {
+      "name": "HafniumAxe",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_axe"
+    },
+    {
+      "name": "HafniumSword",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_sword"
+    },
+    {
+      "name": "HafniumShovel",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_shovel"
+    },
+    {
+      "name": "HafniumHoe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_hoe"
+    },
+    {
+      "name": "HafniumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_pickaxe_recipe"
+    },
+    {
+      "name": "HafniumAxeRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_axe_recipe"
+    },
+    {
+      "name": "HafniumSwordRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_sword_recipe"
+    },
+    {
+      "name": "HafniumShovelRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_shovel_recipe"
+    },
+    {
+      "name": "HafniumHoeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_hoe_recipe"
+    },
+    {
+      "name": "HafniumArmor",
+      "type": "armor",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "HafniumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_armor_helmet_recipe"
+    },
+    {
+      "name": "HafniumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_armor_body_recipe"
+    },
+    {
+      "name": "HafniumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_armor_leggings_recipe"
+    },
+    {
+      "name": "HafniumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_armor_boots_recipe"
+    },
+    {
+      "name": "Smelter",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelter"
+    },
+    {
+      "name": "Smelterrecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelterrecipe"
+    },
+    {
+      "name": "Smelterguicook",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelterguicook",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smeltergui",
+      "type": "gui",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smeltergui"
+    },
+    {
+      "name": "UraniumDust",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_dust"
+    },
+    {
+      "name": "UraniumOre",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore"
+    },
+    {
+      "name": "UraniumBlock",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_block"
+    },
+    {
+      "name": "UraniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore_block_recipe"
+    },
+    {
+      "name": "UraniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_block_ore_recipe"
+    },
+    {
+      "name": "Eathafnium",
+      "type": "achievement",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eathafnium"
+    },
+    {
+      "name": "Centrifuge",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifuge"
+    },
+    {
+      "name": "Fivepercenturaniumpowder",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivepercenturaniumpowder"
+    },
+    {
+      "name": "Centrifugecentrifuge",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugecentrifuge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Centrifugegui",
+      "type": "gui",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugegui"
+    },
+    {
+      "name": "FiftypercenturaniumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiftypercenturanium_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fiftypercenturanium",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiftypercenturanium"
+    },
+    {
+      "name": "Holnium",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium"
+    },
+    {
+      "name": "HolniumOre",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_ore"
+    },
+    {
+      "name": "HolniumBlock",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_block"
+    },
+    {
+      "name": "HolniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_ore_block_recipe"
+    },
+    {
+      "name": "HolniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_block_ore_recipe"
+    },
+    {
+      "name": "HolniumPickaxe",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_pickaxe"
+    },
+    {
+      "name": "HolniumAxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_axe"
+    },
+    {
+      "name": "HolniumSword",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_sword"
+    },
+    {
+      "name": "HolniumShovel",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_shovel"
+    },
+    {
+      "name": "HolniumHoe",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_hoe"
+    },
+    {
+      "name": "HolniumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_pickaxe_recipe"
+    },
+    {
+      "name": "HolniumAxeRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_axe_recipe"
+    },
+    {
+      "name": "HolniumSwordRecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_sword_recipe"
+    },
+    {
+      "name": "HolniumShovelRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_shovel_recipe"
+    },
+    {
+      "name": "HolniumHoeRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_hoe_recipe"
+    },
+    {
+      "name": "HolniumArmor",
+      "type": "armor",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "HolniumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_helmet_recipe"
+    },
+    {
+      "name": "HolniumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_body_recipe"
+    },
+    {
+      "name": "HolniumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_leggings_recipe"
+    },
+    {
+      "name": "HolniumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_boots_recipe"
+    },
+    {
+      "name": "HolniumAxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_axe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_pickaxe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FivepercenturaniumpowderPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fivepercenturaniumpowder_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolniumArmorLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holnium_armor_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Centrifugerecipes",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugerecipes"
+    },
+    {
+      "name": "Manaforest",
+      "type": "biome",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manaforest"
+    },
+    {
+      "name": "Mana_woodWood",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_wood"
+    },
+    {
+      "name": "Mana_woodLog",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_log"
+    },
+    {
+      "name": "Mana_woodPlanks",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_planks"
+    },
+    {
+      "name": "Mana_woodLeaves",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_leaves"
+    },
+    {
+      "name": "Mana_woodStairs",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_stairs"
+    },
+    {
+      "name": "Mana_woodSlab",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_slab"
+    },
+    {
+      "name": "Mana_woodFence",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_fence"
+    },
+    {
+      "name": "Mana_woodFenceGate",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_fence_gate"
+    },
+    {
+      "name": "Mana_woodPressurePlate",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_pressure_plate"
+    },
+    {
+      "name": "Mana_woodButton",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_button"
+    },
+    {
+      "name": "Mana_woodItemsTag",
+      "type": "tag",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_items_tag"
+    },
+    {
+      "name": "Mana_woodWoodRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_wood_recipe"
+    },
+    {
+      "name": "Mana_woodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_planks_recipe"
+    },
+    {
+      "name": "Mana_woodStairsRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_stairs_recipe"
+    },
+    {
+      "name": "Mana_woodSlabRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_slab_recipe"
+    },
+    {
+      "name": "Mana_woodFenceRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_fence_recipe"
+    },
+    {
+      "name": "Mana_woodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_fence_gate_recipe"
+    },
+    {
+      "name": "Mana_woodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_pressure_plate_recipe"
+    },
+    {
+      "name": "Mana_woodButtonRecipe",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_button_recipe"
+    },
+    {
+      "name": "Mana_woodStickRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_wood_stick_recipe"
+    },
+    {
+      "name": "Liquidmana",
+      "type": "fluid",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquidmana",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "TravelStickItemInHandTick",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_stick_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TravelStick",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_stick"
+    },
+    {
+      "name": "TravelStickCraft",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_stick_craft"
+    },
+    {
+      "name": "Manacristalisator",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manacristalisator"
+    },
+    {
+      "name": "Manacristalisatorgui",
+      "type": "gui",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manacristalisatorgui"
+    },
+    {
+      "name": "StabilizedMana",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabilized_mana"
+    },
+    {
+      "name": "Manamana",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manamana",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smallhouse",
+      "type": "structure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smallhouse"
+    },
+    {
+      "name": "Meteor",
+      "type": "structure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor"
+    },
+    {
+      "name": "Manacristalisatorcraft",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manacristalisatorcraft"
+    },
+    {
+      "name": "Manaflower",
+      "type": "plant",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manaflower"
+    },
+    {
+      "name": "Cookholmium",
+      "type": "achievement",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookholmium"
+    },
+    {
+      "name": "CristalMeth",
+      "type": "achievement",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristal_meth"
+    },
+    {
+      "name": "HafniumIngotPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_ingot_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jobfarmer",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jobfarmer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jobgui",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jobgui"
+    },
+    {
+      "name": "JobguiopenOnKeyPressed",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jobguiopen_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jobguiopen",
+      "type": "keybind",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jobguiopen"
+    },
+    {
+      "name": "Cristalized_Emerald",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald"
+    },
+    {
+      "name": "Cristalized_EmeraldBlock",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_block"
+    },
+    {
+      "name": "Cristalized_EmeraldOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_ore_block_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_block_ore_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldPickaxe",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_pickaxe"
+    },
+    {
+      "name": "Cristalized_EmeraldAxe",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_axe"
+    },
+    {
+      "name": "Cristalized_EmeraldSword",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_sword"
+    },
+    {
+      "name": "Cristalized_EmeraldShovel",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_shovel"
+    },
+    {
+      "name": "Cristalized_EmeraldHoe",
+      "type": "tool",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_hoe"
+    },
+    {
+      "name": "Cristalized_EmeraldPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_pickaxe_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldAxeRecipe",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_axe_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldSwordRecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_sword_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldShovelRecipe",
+      "type": "recipe",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_shovel_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldHoeRecipe",
+      "type": "recipe",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_hoe_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldArmor",
+      "type": "armor",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Cristalized_EmeraldArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor_helmet_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor_body_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor_leggings_recipe"
+    },
+    {
+      "name": "Cristalized_EmeraldArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor_boots_recipe"
+    },
+    {
+      "name": "CristalizedEmeraldArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cristalized_emerald_armor_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManaLeave",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_leave"
+    },
+    {
+      "name": "Goldfruit",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldfruit"
+    },
+    {
+      "name": "DynamiteRightclicked",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dynamite",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite"
+    },
+    {
+      "name": "DynamiteprojectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamiteprojectile_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dynamiteprojectile",
+      "type": "rangeditem",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamiteprojectile"
+    },
+    {
+      "name": "Jobminer",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jobminer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawnprotection",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnprotection",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawnprotectionplace",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnprotectionplace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Manatab",
+      "type": "tab",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manatab"
+    },
+    {
+      "name": "Positivemana",
+      "type": "item",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "positivemana"
+    },
+    {
+      "name": "NegativemanaItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "negativemana_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Negativemana",
+      "type": "item",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "negativemana"
+    },
+    {
+      "name": "Chaoticmana",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaoticmana"
+    },
+    {
+      "name": "Corruption",
+      "type": "item",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruption"
+    },
+    {
+      "name": "Darkstone",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkstone"
+    },
+    {
+      "name": "Darkdim",
+      "type": "dimension",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkdim",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Corruptedgrass",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptedgrass"
+    },
+    {
+      "name": "Corrupeddirt",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupeddirt"
+    },
+    {
+      "name": "Darkplain",
+      "type": "biome",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkplain"
+    },
+    {
+      "name": "Cursedfountain",
+      "type": "structure",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursedfountain"
+    },
+    {
+      "name": "Smalltemple",
+      "type": "structure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smalltemple"
+    },
+    {
+      "name": "Smallcamp",
+      "type": "structure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smallcamp"
+    },
+    {
+      "name": "Darkstonecraft",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkstonecraft"
+    },
+    {
+      "name": "Darkdimignightercraft",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkdimignightercraft"
+    },
+    {
+      "name": "DeadWood",
+      "type": "block",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_wood"
+    },
+    {
+      "name": "DeadLog",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_log"
+    },
+    {
+      "name": "DeadPlanks",
+      "type": "block",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_planks"
+    },
+    {
+      "name": "DeadLeaves",
+      "type": "block",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_leaves"
+    },
+    {
+      "name": "DeadStairs",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_stairs"
+    },
+    {
+      "name": "DeadSlab",
+      "type": "block",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_slab"
+    },
+    {
+      "name": "DeadFence",
+      "type": "block",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_fence"
+    },
+    {
+      "name": "DeadFenceGate",
+      "type": "block",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_fence_gate"
+    },
+    {
+      "name": "DeadPressurePlate",
+      "type": "block",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_pressure_plate"
+    },
+    {
+      "name": "DeadButton",
+      "type": "block",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_button"
+    },
+    {
+      "name": "DeadItemsTag",
+      "type": "tag",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_items_tag"
+    },
+    {
+      "name": "DeadWoodRecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_wood_recipe"
+    },
+    {
+      "name": "DeadPlanksRecipe",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_planks_recipe"
+    },
+    {
+      "name": "DeadStairsRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_stairs_recipe"
+    },
+    {
+      "name": "DeadSlabRecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_slab_recipe"
+    },
+    {
+      "name": "DeadFenceRecipe",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_fence_recipe"
+    },
+    {
+      "name": "DeadFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_fence_gate_recipe"
+    },
+    {
+      "name": "DeadPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_pressure_plate_recipe"
+    },
+    {
+      "name": "DeadButtonRecipe",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_button_recipe"
+    },
+    {
+      "name": "DeadStickRecipe",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_stick_recipe"
+    },
+    {
+      "name": "Darkforest",
+      "type": "biome",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkforest"
+    },
+    {
+      "name": "Hiddencamploot",
+      "type": "loottable",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hiddencamploot"
+    },
+    {
+      "name": "Hiddencamp",
+      "type": "structure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hiddencamp"
+    },
+    {
+      "name": "Rockyplain",
+      "type": "biome",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rockyplain"
+    },
+    {
+      "name": "Deadtree1",
+      "type": "structure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadtree_1"
+    },
+    {
+      "name": "Deadtree2",
+      "type": "structure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadtree_2"
+    },
+    {
+      "name": "Deadtree3",
+      "type": "structure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deadtree_3"
+    },
+    {
+      "name": "Fallendeadtree",
+      "type": "structure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fallendeadtree"
+    },
+    {
+      "name": "VerySmallRock",
+      "type": "structure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "very_small_rock"
+    },
+    {
+      "name": "Smallrock",
+      "type": "structure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smallrock"
+    },
+    {
+      "name": "Darkstonepillar",
+      "type": "structure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkstonepillar"
+    },
+    {
+      "name": "CorruptedZombie",
+      "type": "livingentity",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_zombie"
+    },
+    {
+      "name": "Preventnightvision",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preventnightvision",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Corruptedsoul",
+      "type": "item",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptedsoul"
+    },
+    {
+      "name": "Advancedbrick",
+      "type": "block",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancedbrick"
+    },
+    {
+      "name": "Advancedsmeltercontroler",
+      "type": "block",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancedsmeltercontroler"
+    },
+    {
+      "name": "AdvancedsmeltercontrolerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancedsmeltercontroler_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Advancedsmelter",
+      "type": "gui",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancedsmelter"
+    },
+    {
+      "name": "AdvancedsmeltercontrolerOnBlockRightClicked2",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancedsmeltercontroler_on_block_right_clicked_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cuprite",
+      "type": "item",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite"
+    },
+    {
+      "name": "CupriteOre",
+      "type": "block",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite_ore"
+    },
+    {
+      "name": "CupriteBlock",
+      "type": "block",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite_block"
+    },
+    {
+      "name": "CupriteOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite_ore_block_recipe"
+    },
+    {
+      "name": "CupriteBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite_block_ore_recipe"
+    },
+    {
+      "name": "CupriteOreSmelting",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuprite_ore_smelting"
+    },
+    {
+      "name": "Tux",
+      "type": "block",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tux"
+    },
+    {
+      "name": "Tuxcraft",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuxcraft"
+    },
+    {
+      "name": "TallDarkstonePillar",
+      "type": "structure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tall_darkstone_pillar"
+    },
+    {
+      "name": "CaveBlock",
+      "type": "block",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cave_block"
+    },
+    {
+      "name": "CaveBlockCraft",
+      "type": "recipe",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cave_block_craft"
+    },
+    {
+      "name": "Tuxblock",
+      "type": "achievement",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tuxblock"
+    },
+    {
+      "name": "Xray",
+      "type": "achievement",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xray"
+    },
+    {
+      "name": "HolmiumStick",
+      "type": "item",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holmium_stick"
+    },
+    {
+      "name": "BasicUnclaimFinderOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_unclaim_finder_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicUnclaimFinder",
+      "type": "item",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_unclaim_finder"
+    },
+    {
+      "name": "AdvancedUnclaimFinder",
+      "type": "item",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_unclaim_finder"
+    },
+    {
+      "name": "AdvancedUnclaimFinderUsing",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_unclaim_finder_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HandGliderItemInHandTick",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_glider_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HandGlider",
+      "type": "item",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_glider"
+    },
+    {
+      "name": "UltimateUnclaimFinder",
+      "type": "item",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_unclaim_finder"
+    },
+    {
+      "name": "UltimateUnclaimFinderUsed",
+      "type": "procedure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_unclaim_finder_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealStickRightclicked",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_stick_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealStick",
+      "type": "item",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_stick"
+    },
+    {
+      "name": "SpeedStickRightclicked",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_stick_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpeedStick",
+      "type": "item",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_stick"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "job_farmer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "job_farmer_lvl",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "job_miner",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "job_miner_lvl",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "centrifuge_effect",
+      "files": [
+        "mixkit-fast-bike-wheel-spin-1614"
+      ],
+      "category": "block",
+      "subtitle": "Centrifuge centrifuge"
+    },
+    {
+      "name": "ki",
+      "files": [
+        "709916271"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.hafnium.mana_wood_button": "Mana_wood Button",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "advancements.eathafnium.title": "Emilien",
+      "block.hafnium.uranium_ore": "Uranium Ore",
+      "item.hafnium.stabilized_mana": "Stabilized Mana",
+      "itemGroup.tabmanatab": "Mana",
+      "item.hafnium.cristalized_emerald_pickaxe": "Cristalized_Emerald Pickaxe",
+      "biome.hafnium.rockyplain": "Rocky plain",
+      "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
+      "item.hafnium.heal_stick": "Heal Stick",
+      "block.hafnium.hafnium_block": "Block of Hafnium",
+      "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
+      "block.hafnium.cuprite_block": "Block of Cuprite",
+      "item.hafnium.corruptedsoul": "Corrupted soul",
+      "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
+      "block.hafnium.darkstone": "Darkstone",
+      "advancements.tuxblock.title": "Tux",
+      "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
+      "block.hafnium.mana_leave": "Mana Leave",
+      "item.hafnium.liquidmana_bucket": "Liquid Mana Bucket",
+      "block.hafnium.corruptedgrass": "Corrupted grass",
+      "item.hafnium.hafnium_axe": "Hafnium Axe",
+      "block.hafnium.uranium_block": "Block of Uranium",
+      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.cave_block": "Cave Block",
+      "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
+      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
+      "block.hafnium.dead_leaves": "Dead Leaves",
+      "fluid.hafnium.liquidmana": "Liquidmana",
+      "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
+      "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
+      "item.hafnium.holnium_axe": "Holnium Axe",
+      "item.hafnium.holnium_armor_helmet": "Holnium Helmet",
+      "item.hafnium.holnium": "Holnium Ingot",
+      "block.hafnium.smelter": "Smelter",
+      "item.hafnium.darkdim": "Darkdim Portal Igniter",
+      "item.hafnium.hafnium_sword": "Hafnium Sword",
+      "block.hafnium.mana_wood_fence": "Mana Fence",
+      "block.hafnium.dead_slab": "Dead Slab",
+      "item.hafnium.hafnium_shovel": "Hafnium Shovel",
+      "item.hafnium.hafnium_hoe": "Hafnium Hoe",
+      "block.hafnium.dead_planks": "Dead Planks",
+      "block.hafnium.advancedbrick": "Advanced brick",
+      "item.hafnium.advanced_unclaim_finder": "Advanced Unclaim Finder",
+      "item.hafnium.cristalized_emerald_armor_chestplate": "Cristalized_Emerald Chestplate",
+      "item.hafnium.holmium_stick": "Holmium Stick",
+      "item.hafnium.hafnium_armor_chestplate": "Hafnium Chestplate",
+      "item.hafnium.cristalized_emerald_sword": "Cristalized_Emerald Sword",
+      "block.hafnium.mana_wood_slab": "Mana Slab",
+      "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
+      "block.hafnium.liquidmana": "Liquidmana",
+      "item.hafnium.chaoticmana": "Chaotic mana",
+      "item.hafnium.holnium_sword": "Holnium Sword",
+      "item.hafnium.holnium_hoe": "Holnium Hoe",
+      "advancements.xray.title": "Xray",
+      "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
+      "block.hafnium.dead_wood": "Dead Wood",
+      "block.hafnium.manaflower": "Manaflower",
+      "block.hafnium.holnium_ore": "Holnium Ore",
+      "item.hafnium.holnium_armor_boots": "Holnium Boots",
+      "item.hafnium.cristalized_emerald": "Cristalized_Emerald",
+      "item.hafnium.speed_stick": "Speed Stick",
+      "item.hafnium.dynamiteprojectile": "Dynamiteprojectile",
+      "advancements.cookholmium.title": "Holmium!",
+      "biome.hafnium.darkforest": "Dark forest",
+      "block.hafnium.manacristalisator": "Mana Cristalisator",
+      "block.hafnium.mana_wood_leaves": "Mana wood Leaves",
+      "block.hafnium.cuprite_ore": "Cuprite Ore",
+      "item.hafnium.hafnium_ingot": "Hafnium",
+      "item.hafnium.cristalized_emerald_shovel": "Cristalized_Emerald Shovel",
+      "item.hafnium.positivemana": "Positivemana",
+      "item.hafnium.ultimate_unclaim_finder": "Advanced Unclaim Finder",
+      "item.hafnium.holnium_pickaxe": "Holnium Pickaxe",
+      "block.hafnium.goldfruit": "Goldfruit",
+      "block.hafnium.dead_fence": "Dead Fence",
+      "block.hafnium.hafnium_ore": "Hafnium Ore",
+      "item.hafnium.uranium_dust": "Natural Uranium Dust",
+      "block.hafnium.mana_wood_planks": "Mana Planks",
+      "block.hafnium.dead_pressure_plate": "Dead Pressure Plate",
+      "block.hafnium.mana_wood_wood": "Mana Wood",
+      "item.hafnium.cristalized_emerald_axe": "Cristalized_Emerald Axe",
+      "advancements.cristal_meth.descr": "Craft a Cristalisator",
+      "item.hafnium.fivepercenturaniumpowder": "5% Uranium Powder",
+      "item.hafnium.corrupted_zombie_spawn_egg": "Corrupted Zombie Spawn Egg",
+      "advancements.cristal_meth.title": "Cristal Met-Mana",
+      "block.hafnium.centrifuge": "Centrifuge",
+      "block.hafnium.holnium_block": "Block of Holnium",
+      "item.hafnium.cristalized_emerald_armor_boots": "Cristalized_Emerald Boots",
+      "item.hafnium.hafnium_armor_leggings": "Hafnium Leggings",
+      "subtitles.ki": "",
+      "block.hafnium.mana_wood_log": "Mana Log",
+      "advancements.cookholmium.descr": "Nice",
+      "item.hafnium.cristalized_emerald_armor_leggings": "Cristalized_Emerald Leggings",
+      "item.hafnium.holnium_shovel": "Holnium Shovel",
+      "item.hafnium.hand_glider": "Hang Glider",
+      "item.hafnium.dynamite": "Dynamite",
+      "block.hafnium.dead_fence_gate": "Dead Fence Gate",
+      "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
+      "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
+      "block.hafnium.dead_stairs": "Dead Stairs",
+      "item.hafnium.travel_stick": "Travel Stick",
+      "block.hafnium.dead_button": "Dead Button",
+      "entity.hafnium.corrupted_zombie": "Corrupted Zombie",
+      "subtitles.centrifuge_effect": "Centrifuge centrifuge",
+      "biome.hafnium.darkplain": "Darkplain",
+      "biome.hafnium.manaforest": "Manaforest",
+      "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.corruption": "Corruption",
+      "advancements.xray.descr": "Comment Xray sans se faire ban",
+      "block.hafnium.corrupeddirt": "Corruped dirt",
+      "item.hafnium.cristalized_emerald_hoe": "Cristalized_Emerald Hoe",
+      "block.hafnium.tux": "Tux"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "jobs",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "hafnium",
+    "modName": "Hafnium",
+    "version": "1.0.0",
+    "author": "emilien, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.hafnium",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

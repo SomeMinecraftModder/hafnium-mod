@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hafnium:dead_planks"
+    }
+  ],
+  "result": {
+    "item": "hafnium:dead_button",
+    "count": 1
+  }
+}

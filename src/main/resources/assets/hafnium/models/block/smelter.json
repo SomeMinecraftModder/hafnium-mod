@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/furnace_face_tex",
+    "up": "hafnium:blocks/furnace_face_tex",
+    "north": "hafnium:blocks/furnace_tex",
+    "east": "hafnium:blocks/furnace_face_tex",
+    "south": "hafnium:blocks/furnace_face_tex",
+    "west": "hafnium:blocks/furnace_face_tex",
+    "particle": "hafnium:blocks/furnace_face_tex"
+  }
+}

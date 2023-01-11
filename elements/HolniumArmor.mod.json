@@ -1,0 +1,74 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "holmiumarmorcasque",
+    "enableBody": true,
+    "textureBody": "holmiumchesplate",
+    "enableLeggings": true,
+    "textureLeggings": "holmiumarmorlegging2",
+    "enableBoots": true,
+    "textureBoots": "holmiumarmorboots",
+    "onHelmetTick": {
+      "name": "HolniumArmorHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "HolniumArmorBodyTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "HolniumArmorLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "HolniumArmorBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "_tkt",
+    "helmetName": "Holnium Helmet",
+    "bodyName": "Holnium Chestplate",
+    "leggingsName": "Holnium Leggings",
+    "bootsName": "Holnium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 75,
+    "damageValueHelmet": 10,
+    "damageValueBody": 25,
+    "damageValueLeggings": 30,
+    "damageValueBoots": 10,
+    "enchantability": 45,
+    "toughness": 5.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Holnium"
+      }
+    ]
+  }
+}

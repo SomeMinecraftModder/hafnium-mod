@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:holnium"
+    },
+    "2": {
+      "item": "hafnium:holnium"
+    },
+    "3": {
+      "item": "hafnium:holnium"
+    },
+    "5": {
+      "item": "hafnium:holnium"
+    }
+  },
+  "result": {
+    "item": "hafnium:holnium_armor_boots",
+    "count": 1
+  }
+}

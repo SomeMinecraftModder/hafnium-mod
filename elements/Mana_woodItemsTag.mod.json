@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Mana_woodWood"
+      },
+      {
+        "value": "CUSTOM:Mana_woodLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "mana_wood_log",
+    "namespace": "forge"
+  }
+}

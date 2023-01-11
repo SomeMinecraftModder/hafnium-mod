@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:dead_log"
+    },
+    "1": {
+      "item": "hafnium:dead_log"
+    },
+    "2": {
+      "item": "hafnium:dead_log"
+    },
+    "3": {
+      "item": "hafnium:dead_log"
+    }
+  },
+  "result": {
+    "item": "hafnium:dead_wood",
+    "count": 3
+  }
+}

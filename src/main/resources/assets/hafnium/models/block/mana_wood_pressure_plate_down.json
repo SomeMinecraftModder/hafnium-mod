@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "hafnium:blocks/mana_wood_planks"
+  }
+}

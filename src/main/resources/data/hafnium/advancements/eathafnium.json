@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "hafnium:hafnium_ingot"
+    },
+    "title": {
+      "translate": "advancements.eathafnium.title"
+    },
+    "description": {
+      "translate": "advancements.eathafnium.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "eathafnium": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "hafnium:hafnium_ingot"
+        }
+      }
+    }
+  },
+  "parent": "minecraft:story/smelt_iron"
+}
