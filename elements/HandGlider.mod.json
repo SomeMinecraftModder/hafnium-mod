@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "hangglidertexture",
+    "texture": "hangglider",
     "customModelName": "Normal",
     "name": "Hang Glider",
     "rarity": "UNCOMMON",
@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "HandGliderRightclicked"
+    },
     "onItemInUseTick": {
       "name": "HandGliderItemInHandTick"
     },

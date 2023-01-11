@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "hafnium:items/hangglidertexture"
+    "layer0": "hafnium:items/hangglider"
   }
 }

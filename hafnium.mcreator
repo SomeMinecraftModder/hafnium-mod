@@ -2215,6 +2215,130 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "speed_stick"
+    },
+    {
+      "name": "StickOfGod",
+      "type": "item",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_of_god"
+    },
+    {
+      "name": "StrenghtStick",
+      "type": "item",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strenght_stick"
+    },
+    {
+      "name": "TravelChestplate",
+      "type": "armor",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_chestplate",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "TravelChestplateBodyTickEvent",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_chestplate_body_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TravelChestplateLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_chestplate_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StrenghtStickRightclicked",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strenght_stick_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StickOfGodRightclicked",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stick_of_god_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HandGliderRightclicked",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hand_glider_rightclicked",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TravelChestplateBootsTickEvent",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_chestplate_boots_tick_event",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -2264,8 +2388,8 @@
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -2275,8 +2399,8 @@
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "item.hafnium.negativemana": "Negativemana",
       "key.hafnium.jobguiopen": "Open Jobs menu",
+      "item.hafnium.negativemana": "Negativemana",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
@@ -2286,13 +2410,15 @@
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "block.hafnium.mana_leave": "Mana Leave",
       "item.hafnium.liquidmana_bucket": "Liquid Mana Bucket",
+      "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
+      "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
@@ -2311,6 +2437,7 @@
       "block.hafnium.advancedbrick": "Advanced brick",
       "item.hafnium.advanced_unclaim_finder": "Advanced Unclaim Finder",
       "item.hafnium.cristalized_emerald_armor_chestplate": "Cristalized_Emerald Chestplate",
+      "item.hafnium.travel_chestplate_leggings": "Travel Leggings",
       "item.hafnium.holmium_stick": "Holmium Stick",
       "item.hafnium.hafnium_armor_chestplate": "Hafnium Chestplate",
       "item.hafnium.cristalized_emerald_sword": "Cristalized_Emerald Sword",
@@ -2319,6 +2446,7 @@
       "block.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
+      "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
       "item.hafnium.cuprite": "Cuprite",
@@ -2346,6 +2474,7 @@
       "item.hafnium.uranium_dust": "Natural Uranium Dust",
       "block.hafnium.mana_wood_planks": "Mana Planks",
       "block.hafnium.dead_pressure_plate": "Dead Pressure Plate",
+      "item.hafnium.strenght_stick": "Strenght Stick",
       "block.hafnium.mana_wood_wood": "Mana Wood",
       "item.hafnium.cristalized_emerald_axe": "Cristalized_Emerald Axe",
       "advancements.cristal_meth.descr": "Craft a Cristalisator",
@@ -2362,6 +2491,7 @@
       "item.hafnium.cristalized_emerald_armor_leggings": "Cristalized_Emerald Leggings",
       "item.hafnium.holnium_shovel": "Holnium Shovel",
       "item.hafnium.hand_glider": "Hang Glider",
+      "item.hafnium.stick_of_god": "Stick Of God",
       "item.hafnium.dynamite": "Dynamite",
       "block.hafnium.dead_fence_gate": "Dead Fence Gate",
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
