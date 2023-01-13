@@ -5,12 +5,16 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
+
+import net.mcreator.hafnium.HafniumMod;
 
 import java.util.HashMap;
 
@@ -31,8 +35,8 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 176;
-		this.ySize = 166;
+		this.xSize = 250;
+		this.ySize = 200;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/advancedsmelter.png");
@@ -72,7 +76,9 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Label text", 50, 37, -12829636);
+		this.font.drawString(ms, "1", 16, 24, -12829636);
+		this.font.drawString(ms, "2", 16, 42, -12829636);
+		this.font.drawString(ms, "3", 16, 60, -12829636);
 	}
 
 	@Override
@@ -85,5 +91,11 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 78, 51, 20, new StringTextComponent("Cuire"), e -> {
+			if (true) {
+				HafniumMod.PACKET_HANDLER.sendToServer(new AdvancedsmelterGui.ButtonPressedMessage(0, x, y, z));
+				AdvancedsmelterGui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
 	}
 }

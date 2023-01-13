@@ -1,6 +1,7 @@
 
 package net.mcreator.hafnium.gui;
 
+import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -27,12 +28,15 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
+import net.mcreator.hafnium.procedures.AdvancedSmelterGuiOnClickedButtonProcedure;
 import net.mcreator.hafnium.HafniumModElements;
 import net.mcreator.hafnium.HafniumMod;
 
+import java.util.stream.Stream;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 @HafniumModElements.ModElement.Tag
 public class AdvancedsmelterGui extends HafniumModElements.ModElement {
@@ -79,7 +83,7 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(0);
+			this.internal = new ItemStackHandler(5);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -117,13 +121,27 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 					}
 				}
 			}
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 25) {
+			}));
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 43) {
+			}));
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 26, 61) {
+			}));
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 197, 43) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 26, 88) {
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 37 + 8 + sj * 18, 32 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 37 + 8 + si * 18, 32 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -142,18 +160,18 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 0) {
-					if (!this.mergeItemStack(itemstack1, 0, this.inventorySlots.size(), true)) {
+				if (index < 5) {
+					if (!this.mergeItemStack(itemstack1, 5, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 0, false)) {
-					if (index < 0 + 27) {
-						if (!this.mergeItemStack(itemstack1, 0 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 5, false)) {
+					if (index < 5 + 27) {
+						if (!this.mergeItemStack(itemstack1, 5 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 0, 0 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 5, 5 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -364,6 +382,13 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			AdvancedSmelterGuiOnClickedButtonProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

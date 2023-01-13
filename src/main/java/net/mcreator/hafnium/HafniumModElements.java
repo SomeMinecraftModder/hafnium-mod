@@ -50,6 +50,8 @@ public class HafniumModElements {
 		sounds.put(new ResourceLocation("hafnium", "centrifuge_effect"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("hafnium", "centrifuge_effect")));
 		sounds.put(new ResourceLocation("hafnium", "ki"), new net.minecraft.util.SoundEvent(new ResourceLocation("hafnium", "ki")));
+		sounds.put(new ResourceLocation("hafnium", "advanced_furnace_start"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("hafnium", "advanced_furnace_start")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("hafnium").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

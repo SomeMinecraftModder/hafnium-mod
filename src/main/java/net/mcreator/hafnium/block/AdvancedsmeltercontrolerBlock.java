@@ -52,7 +52,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.hafnium.procedures.AdvancedsmeltercontrolerOnBlockRightClickedProcedure;
-import net.mcreator.hafnium.procedures.AdvancedsmeltercontrolerOnBlockRightClicked2Procedure;
 import net.mcreator.hafnium.gui.AdvancedsmelterGui;
 import net.mcreator.hafnium.HafniumModElements;
 
@@ -137,19 +136,6 @@ public class AdvancedsmeltercontrolerBlock extends HafniumModElements.ModElement
 		}
 
 		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-
-			AdvancedsmeltercontrolerOnBlockRightClickedProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
-
-		@Override
 		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
 				BlockRayTraceResult hit) {
 			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
@@ -161,7 +147,7 @@ public class AdvancedsmeltercontrolerBlock extends HafniumModElements.ModElement
 			double hitZ = hit.getHitVec().z;
 			Direction direction = hit.getFace();
 
-			AdvancedsmeltercontrolerOnBlockRightClicked2Procedure.executeProcedure(Stream
+			AdvancedsmeltercontrolerOnBlockRightClickedProcedure.executeProcedure(Stream
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));

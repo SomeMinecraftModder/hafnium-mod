@@ -1846,6 +1846,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2108,6 +2112,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -2326,7 +2334,12 @@
       "locked_code": false,
       "registry_name": "hand_glider_rightclicked",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -2339,6 +2352,106 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "AdvancedSmelterCheck",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_smelter_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Circuit",
+      "type": "item",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit"
+    },
+    {
+      "name": "CircuitCraft",
+      "type": "recipe",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circuit_craft"
+    },
+    {
+      "name": "GoldenAppleOveride",
+      "type": "recipe",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_apple_overide"
+    },
+    {
+      "name": "AdvancedSmelterGuiOnClickedButton",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_smelter_gui_on_clicked_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdvancedBrickCraft",
+      "type": "recipe",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_brick_craft"
+    },
+    {
+      "name": "AdvancedSmelterControlerCraft",
+      "type": "recipe",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_smelter_controler_craft"
     }
   ],
   "variable_elements": [
@@ -2365,6 +2478,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "is_gang_glider_enabled",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -2383,13 +2502,21 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "advanced_furnace_start",
+      "files": [
+        "lighting-a-fire-14421"
+      ],
+      "category": "block",
+      "subtitle": "Advanced furnace blast"
     }
   ],
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -2399,26 +2526,26 @@
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "advancements.tuxblock.title": "Tux",
       "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "advancements.tuxblock.title": "Tux",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "block.hafnium.mana_leave": "Mana Leave",
       "item.hafnium.liquidmana_bucket": "Liquid Mana Bucket",
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
+      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
-      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
+      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
@@ -2459,6 +2586,7 @@
       "item.hafnium.speed_stick": "Speed Stick",
       "item.hafnium.dynamiteprojectile": "Dynamiteprojectile",
       "advancements.cookholmium.title": "Holmium!",
+      "subtitles.advanced_furnace_start": "Advanced furnace blast",
       "biome.hafnium.darkforest": "Dark forest",
       "block.hafnium.manacristalisator": "Mana Cristalisator",
       "block.hafnium.mana_wood_leaves": "Mana wood Leaves",
@@ -2471,6 +2599,7 @@
       "block.hafnium.goldfruit": "Goldfruit",
       "block.hafnium.dead_fence": "Dead Fence",
       "block.hafnium.hafnium_ore": "Hafnium Ore",
+      "item.hafnium.circuit": "Circuit",
       "item.hafnium.uranium_dust": "Natural Uranium Dust",
       "block.hafnium.mana_wood_planks": "Mana Planks",
       "block.hafnium.dead_pressure_plate": "Dead Pressure Plate",

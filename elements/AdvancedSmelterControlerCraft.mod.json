@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:HafniumBlock"
+      },
+      {
+        "value": "CUSTOM:Advancedbrick"
+      },
+      {
+        "value": "CUSTOM:HafniumBlock"
+      },
+      {
+        "value": "CUSTOM:Advancedbrick"
+      },
+      {
+        "value": "CUSTOM:Circuit"
+      },
+      {
+        "value": "CUSTOM:Advancedbrick"
+      },
+      {
+        "value": "CUSTOM:HafniumBlock"
+      },
+      {
+        "value": "CUSTOM:Advancedbrick"
+      },
+      {
+        "value": "CUSTOM:HafniumBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Advancedsmeltercontroler"
+    },
+    "name": "advanced_smelter_controler_craft",
+    "namespace": "mod"
+  }
+}

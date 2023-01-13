@@ -1,22 +1,31 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
+import net.minecraftforge.fml.network.NetworkHooks;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ChatType;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Util;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.server.MinecraftServer;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.hafnium.block.AdvancedbrickBlock;
+import net.mcreator.hafnium.gui.AdvancedsmelterGui;
 import net.mcreator.hafnium.HafniumMod;
 
+import java.util.stream.Stream;
 import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import io.netty.buffer.Unpooled;
 
 public class AdvancedsmeltercontrolerOnBlockRightClickedProcedure {
 
@@ -41,163 +50,64 @@ public class AdvancedsmeltercontrolerOnBlockRightClickedProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency z for procedure AdvancedsmeltercontrolerOnBlockRightClicked!");
 			return;
 		}
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure AdvancedsmeltercontrolerOnBlockRightClicked!");
+			return;
+		}
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
+		Entity entity = (Entity) dependencies.get("entity");
 		boolean sucess = false;
-		world.setBlockState(new BlockPos(x, y + 2, z), (world.getBlockState(new BlockPos(z + 1, y - 1, z + 1))), 3);
-		sucess = (true);
-		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("1"), ChatType.SYSTEM, Util.DUMMY_UUID);
+		BlockState core = Blocks.AIR.getDefaultState();
+		core = Blocks.LAVA.getDefaultState();
+		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == (core).getBlock()) {
+			AdvancedSmelterCheckProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", (x + 1)),
+							new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		} else if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == (core).getBlock()) {
+			AdvancedSmelterCheckProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", (x - 1)),
+							new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		} else if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == (core).getBlock()) {
+			AdvancedSmelterCheckProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", (z + 1)))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		} else if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == (core).getBlock()) {
+			AdvancedSmelterCheckProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", (z - 1)))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+		}
+		if (new Object() {
+			public boolean getValue(IWorld world, BlockPos pos, String tag) {
+				TileEntity tileEntity = world.getTileEntity(pos);
+				if (tileEntity != null)
+					return tileEntity.getTileData().getBoolean(tag);
+				return false;
 			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.LAVA)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("2"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 3, z))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("3"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("4"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x + 1, y - 2, z))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("5"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x + 1, y - 3, z))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("6"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x - 1, y - 2, z))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x - 1, y - 3, z))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 2, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 3, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 2, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(x, y - 3, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 1, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("7"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 2, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("8"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 3, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 1, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 2, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 3, z + 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 1, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 2, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z + 1, y - 3, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 1, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 2, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (!((world.getBlockState(new BlockPos(z - 1, y - 3, z - 1))).getBlock() == AdvancedbrickBlock.block)) {
-			sucess = (false);
-		}
-		if (sucess) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos(x, y, z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putBoolean("work", (true));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("Message"), ChatType.SYSTEM, Util.DUMMY_UUID);
-			}
-		} else {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos(x, y, z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putBoolean("work", (false));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-				if (mcserv != null)
-					mcserv.getPlayerList().func_232641_a_(new StringTextComponent("tkt"), ChatType.SYSTEM, Util.DUMMY_UUID);
+		}.getValue(world, new BlockPos(x, y, z), "canOpenInventory")) {
+			{
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
+						@Override
+						public ITextComponent getDisplayName() {
+							return new StringTextComponent("Advancedsmelter");
+						}
+
+						@Override
+						public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+							return new AdvancedsmelterGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:hafnium_block"
+    },
+    "1": {
+      "item": "hafnium:advancedbrick"
+    },
+    "2": {
+      "item": "hafnium:hafnium_block"
+    },
+    "3": {
+      "item": "hafnium:advancedbrick"
+    },
+    "4": {
+      "item": "hafnium:circuit"
+    },
+    "5": {
+      "item": "hafnium:advancedbrick"
+    },
+    "6": {
+      "item": "hafnium:hafnium_block"
+    },
+    "7": {
+      "item": "hafnium:advancedbrick"
+    },
+    "8": {
+      "item": "hafnium:hafnium_block"
+    }
+  },
+  "result": {
+    "item": "hafnium:advancedsmeltercontroler",
+    "count": 1
+  }
+}

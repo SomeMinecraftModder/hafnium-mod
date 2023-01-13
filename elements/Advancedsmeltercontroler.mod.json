@@ -122,9 +122,6 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AdvancedsmeltercontrolerOnBlockRightClicked2"
-    },
-    "onBlockAdded": {
       "name": "AdvancedsmeltercontrolerOnBlockRightClicked"
     },
     "spawnWorldTypes": [],

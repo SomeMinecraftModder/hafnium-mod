@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "hafnium:blocks/advanced_brick_tex",
-    "up": "hafnium:blocks/advanced_brick_tex",
-    "north": "hafnium:blocks/advanced_brick_tex",
-    "east": "hafnium:blocks/advanced_brick_tex",
-    "south": "hafnium:blocks/advanced_brick_tex",
-    "west": "hafnium:blocks/advanced_brick_tex",
-    "particle": "hafnium:blocks/advanced_brick_tex"
+    "down": "hafnium:blocks/advancedbrick_tex",
+    "up": "hafnium:blocks/advancedbrick_tex",
+    "north": "hafnium:blocks/advancedbrick_tex",
+    "east": "hafnium:blocks/advancedbrick_tex",
+    "south": "hafnium:blocks/advancedbrick_tex",
+    "west": "hafnium:blocks/advancedbrick_tex",
+    "particle": "hafnium:blocks/advancedbrick_tex"
   }
 }

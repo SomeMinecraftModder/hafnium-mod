@@ -17,5 +17,15 @@
         "stream": true
       }
     ]
+  },
+  "advanced_furnace_start": {
+    "category": "block",
+    "subtitle": "subtitles.advanced_furnace_start",
+    "sounds": [
+      {
+        "name": "hafnium:lighting-a-fire-14421",
+        "stream": false
+      }
+    ]
   }
 }
