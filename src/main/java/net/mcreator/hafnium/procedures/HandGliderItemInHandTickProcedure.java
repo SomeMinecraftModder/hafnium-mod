@@ -24,15 +24,19 @@ public class HandGliderItemInHandTickProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled) {
+			if (entity.isOnGround()) {
+				HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled = (false);
+				HafniumModVariables.MapVariables.get(world).syncData(world);
+			}
 			if (entity.isSneaking()) {
 				if (Math.abs(entity.getMotion().getX()) + Math.abs(entity.getMotion().getZ()) < 0.6) {
 					entity.setMotion((entity.getMotion().getX() / 2 + entity.getMotion().getX()), (entity.getMotion().getY() + 0.05),
 							(entity.getMotion().getZ() / 2 + entity.getMotion().getZ()));
 				} else {
-					entity.setMotion((entity.getMotion().getX()), (entity.getMotion().getY() + 0.05), (entity.getMotion().getZ()));
+					entity.setMotion((entity.getMotion().getX()), (entity.getMotion().getY() + 0.04), (entity.getMotion().getZ()));
 				}
 			} else {
-				entity.setMotion((entity.getMotion().getX()), (entity.getMotion().getY() + 0.065), (entity.getMotion().getZ()));
+				entity.setMotion((entity.getMotion().getX()), (entity.getMotion().getY() + 0.04), (entity.getMotion().getZ()));
 			}
 		}
 	}

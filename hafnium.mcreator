@@ -2452,6 +2452,126 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_smelter_controler_craft"
+    },
+    {
+      "name": "AdvancedCasing",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_casing"
+    },
+    {
+      "name": "AdvancedCasingCraft",
+      "type": "recipe",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_casing_craft"
+    },
+    {
+      "name": "DeadSpawnerPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_spawner_player_starts_to_destroy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeadSpawner",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_spawner"
+    },
+    {
+      "name": "Towerloottable",
+      "type": "loottable",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "towerloottable"
+    },
+    {
+      "name": "Temple",
+      "type": "structure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temple"
+    },
+    {
+      "name": "Tower",
+      "type": "structure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower"
+    },
+    {
+      "name": "TprCommandExecuted",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tpr_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tpr",
+      "type": "command",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tpr"
+    },
+    {
+      "name": "Holmiumnugget",
+      "type": "item",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holmiumnugget"
+    },
+    {
+      "name": "DarkLord",
+      "type": "livingentity",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord"
     }
   ],
   "variable_elements": [
@@ -2515,8 +2635,8 @@
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -2525,27 +2645,29 @@
       "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
+      "block.hafnium.advanced_casing": "Advanced Casing",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "item.hafnium.negativemana": "Negativemana",
       "key.hafnium.jobguiopen": "Open Jobs menu",
+      "item.hafnium.negativemana": "Negativemana",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "advancements.tuxblock.title": "Tux",
+      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
+      "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
       "item.hafnium.liquidmana_bucket": "Liquid Mana Bucket",
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
-      "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
+      "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
@@ -2559,6 +2681,8 @@
       "block.hafnium.mana_wood_fence": "Mana Fence",
       "block.hafnium.dead_slab": "Dead Slab",
       "item.hafnium.hafnium_shovel": "Hafnium Shovel",
+      "entity.hafnium.dark_lord": "Dark Lord",
+      "item.hafnium.holmiumnugget": "Holmium nugget",
       "item.hafnium.hafnium_hoe": "Hafnium Hoe",
       "block.hafnium.dead_planks": "Dead Planks",
       "block.hafnium.advancedbrick": "Advanced brick",
@@ -2636,6 +2760,7 @@
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",
+      "block.hafnium.dead_spawner": "Dead Spawner",
       "item.hafnium.cristalized_emerald_hoe": "Cristalized_Emerald Hoe",
       "block.hafnium.tux": "Tux"
     }

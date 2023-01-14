@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hafnium:blocks/dead_spawner_tex",
+    "up": "hafnium:blocks/dead_spawner_tex",
+    "north": "hafnium:blocks/dead_spawner_tex",
+    "east": "hafnium:blocks/dead_spawner_tex",
+    "south": "hafnium:blocks/dead_spawner_tex",
+    "west": "hafnium:blocks/dead_spawner_tex",
+    "particle": "hafnium:blocks/dead_spawner_tex"
+  }
+}

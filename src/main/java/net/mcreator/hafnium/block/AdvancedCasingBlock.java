@@ -2,7 +2,6 @@
 package net.mcreator.hafnium.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
@@ -22,12 +21,12 @@ import java.util.List;
 import java.util.Collections;
 
 @HafniumModElements.ModElement.Tag
-public class CupriteBlockBlock extends HafniumModElements.ModElement {
-	@ObjectHolder("hafnium:cuprite_block")
+public class AdvancedCasingBlock extends HafniumModElements.ModElement {
+	@ObjectHolder("hafnium:advanced_casing")
 	public static final Block block = null;
 
-	public CupriteBlockBlock(HafniumModElements instance) {
-		super(instance, 190);
+	public AdvancedCasingBlock(HafniumModElements instance) {
+		super(instance, 225);
 	}
 
 	@Override
@@ -39,9 +38,8 @@ public class CupriteBlockBlock extends HafniumModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).setLightLevel(s -> 0).harvestLevel(2)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool());
-			setRegistryName("cuprite_block");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			setRegistryName("advanced_casing");
 		}
 
 		@Override
