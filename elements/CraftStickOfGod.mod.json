@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:HolniumBlock"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG"
+        "value": "CUSTOM:StrenghtStick"
       },
       {
-        "value": "CUSTOM:HolniumBlock"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SpeedStick"
+      },
+      {
+        "value": "CUSTOM:HolmiumStick"
       },
       {
         "value": "CUSTOM:HealStick"
       },
       {
-        "value": "CUSTOM:Mana_woodWood"
+        "value": ""
       },
       {
-        "value": "CUSTOM:CaveBlock"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:HolniumBlock"
-      },
-      {
-        "value": "Blocks.LOG"
-      },
-      {
-        "value": "CUSTOM:HolniumBlock"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tux"
+      "value": "CUSTOM:StickOfGod"
     },
-    "name": "tuxcraft",
+    "name": "craft_stick_of_god",
     "namespace": "mod"
   }
 }

@@ -2452,6 +2452,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_smelter_controler_craft"
+    },
+    {
+      "name": "CraftStickOfGod",
+      "type": "recipe",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stick_of_god"
     }
   ],
   "variable_elements": [
