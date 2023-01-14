@@ -2,14 +2,14 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "cuprite_ore_block",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "advanced_casing_top_tex",
+    "textureTop": "advanced_casing_top_tex",
+    "textureLeft": "advanced_casing_tex",
+    "textureFront": "advanced_casing_tex",
+    "textureRight": "advanced_casing_tex",
+    "textureBack": "advanced_casing_tex",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Block of Cuprite",
+    "name": "Advanced Casing",
     "specialInfo": [],
-    "hardness": 5.0,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -96,7 +96,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

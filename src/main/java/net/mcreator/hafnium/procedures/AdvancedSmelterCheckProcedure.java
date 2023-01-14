@@ -9,6 +9,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.hafnium.block.AdvancedsmeltercontrolerBlock;
 import net.mcreator.hafnium.block.AdvancedbrickBlock;
+import net.mcreator.hafnium.block.AdvancedCasingBlock;
 import net.mcreator.hafnium.HafniumMod;
 
 import java.util.Map;
@@ -44,7 +45,7 @@ public class AdvancedSmelterCheckProcedure {
 		BlockState interfaceBlock = Blocks.AIR.getDefaultState();
 		BlockState crossBlockMiddleLayer = Blocks.AIR.getDefaultState();
 		BlockState frame = Blocks.AIR.getDefaultState();
-		frame = AdvancedbrickBlock.block.getDefaultState();
+		frame = AdvancedCasingBlock.block.getDefaultState();
 		interfaceBlock = AdvancedsmeltercontrolerBlock.block.getDefaultState();
 		middleLineBlock = AdvancedbrickBlock.block.getDefaultState();
 		crossBlockMiddleLayer = AdvancedbrickBlock.block.getDefaultState();

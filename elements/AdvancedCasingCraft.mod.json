@@ -13,34 +13,34 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Blocks.IRON_TRAPDOOR"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "CUSTOM:HolmiumStick"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:Cuprite"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:HafniumIngot"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Cuprite"
       },
       {
         "value": "Items.IRON_INGOT"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Centrifuge"
+      "value": "CUSTOM:AdvancedCasing"
     },
-    "name": "centrifugerecipes",
+    "name": "advanced_casing_craft",
     "namespace": "mod"
   }
 }
