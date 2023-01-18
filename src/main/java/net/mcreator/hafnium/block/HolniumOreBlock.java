@@ -36,7 +36,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.hafnium.item.HolniumItem;
 import net.mcreator.hafnium.HafniumModElements;
 
 import java.util.Random;
@@ -78,7 +77,7 @@ public class HolniumOreBlock extends HafniumModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(HolniumItem.block));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 
