@@ -108,7 +108,7 @@ public class HafniumModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "hafnium_mapvars";
-		public double clearlagnum = 0;
+		public boolean is_gang_glider_enabled = false;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -120,12 +120,12 @@ public class HafniumModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
-			clearlagnum = nbt.getDouble("clearlagnum");
+			is_gang_glider_enabled = nbt.getBoolean("is_gang_glider_enabled");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
-			nbt.putDouble("clearlagnum", clearlagnum);
+			nbt.putBoolean("is_gang_glider_enabled", is_gang_glider_enabled);
 			return nbt;
 		}
 
@@ -219,7 +219,6 @@ public class HafniumModVariables {
 			nbt.putDouble("job_farmer_lvl", instance.job_farmer_lvl);
 			nbt.putDouble("job_miner", instance.job_miner);
 			nbt.putDouble("job_miner_lvl", instance.job_miner_lvl);
-			nbt.putBoolean("is_gang_glider_enabled", instance.is_gang_glider_enabled);
 			return nbt;
 		}
 
@@ -230,7 +229,6 @@ public class HafniumModVariables {
 			instance.job_farmer_lvl = nbt.getDouble("job_farmer_lvl");
 			instance.job_miner = nbt.getDouble("job_miner");
 			instance.job_miner_lvl = nbt.getDouble("job_miner_lvl");
-			instance.is_gang_glider_enabled = nbt.getBoolean("is_gang_glider_enabled");
 		}
 	}
 
@@ -239,7 +237,6 @@ public class HafniumModVariables {
 		public double job_farmer_lvl = 0;
 		public double job_miner = 0;
 		public double job_miner_lvl = 0;
-		public boolean is_gang_glider_enabled = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -278,7 +275,6 @@ public class HafniumModVariables {
 		clone.job_farmer_lvl = original.job_farmer_lvl;
 		clone.job_miner = original.job_miner;
 		clone.job_miner_lvl = original.job_miner_lvl;
-		clone.is_gang_glider_enabled = original.is_gang_glider_enabled;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -309,7 +305,6 @@ public class HafniumModVariables {
 					variables.job_farmer_lvl = message.data.job_farmer_lvl;
 					variables.job_miner = message.data.job_miner;
 					variables.job_miner_lvl = message.data.job_miner_lvl;
-					variables.is_gang_glider_enabled = message.data.is_gang_glider_enabled;
 				}
 			});
 			context.setPacketHandled(true);
