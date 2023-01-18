@@ -1,9 +1,19 @@
 package net.mcreator.hafnium.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.Map;
+import java.util.HashMap;
 
 public class SafeZoneProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -46,11 +56,9 @@ public class SafeZoneProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure SafeZone!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if (!entity.hasPermissionLevel((int) 4)) {
 			if (x < 50 && x > -50 && z < 50 && z > -50) {
 				if (dependencies.get("event") != null) {
@@ -64,5 +72,4 @@ public class SafeZoneProcedure {
 			}
 		}
 	}
-
 }

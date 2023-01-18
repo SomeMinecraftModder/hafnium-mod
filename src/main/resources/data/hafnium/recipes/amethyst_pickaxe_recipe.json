@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "hafnium:deleted_mod_element"
+      "item": "hafnium:amethyst_shard"
     },
     "1": {
-      "item": "hafnium:deleted_mod_element"
+      "item": "hafnium:amethyst_shard"
     },
     "2": {
-      "item": "hafnium:deleted_mod_element"
+      "item": "hafnium:amethyst_shard"
     },
     "4": {
       "item": "minecraft:stick"
@@ -23,7 +23,7 @@
     }
   },
   "result": {
-    "item": "hafnium:deleted_mod_element",
+    "item": "hafnium:amethyst_pickaxe",
     "count": 1
   }
 }

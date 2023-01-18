@@ -2864,6 +2864,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "amethyst_axe_recipe"
+    },
+    {
+      "name": "ClearLag",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_lag",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -2894,8 +2905,14 @@
     {
       "name": "is_gang_glider_enabled",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "clearlagnum",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2927,8 +2944,8 @@
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -2938,15 +2955,17 @@
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.advanced_casing": "Advanced Casing",
+      "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "item.hafnium.negativemana": "Negativemana",
       "key.hafnium.jobguiopen": "Open Jobs menu",
+      "item.hafnium.negativemana": "Negativemana",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
+      "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "advancements.tuxblock.title": "Tux",
+      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -2954,16 +2973,18 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
-      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
+      "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
+      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
       "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
+      "item.hafnium.amethyst_shovel": "Amethyst Shovel",
       "item.hafnium.holnium_axe": "Holnium Axe",
       "item.hafnium.holnium_armor_helmet": "Holnium Helmet",
       "item.hafnium.holnium": "Holnium Ingot",
@@ -2982,6 +3003,7 @@
       "item.hafnium.cristalized_emerald_armor_chestplate": "Cristalized_Emerald Chestplate",
       "item.hafnium.travel_chestplate_leggings": "Travel Leggings",
       "item.hafnium.holmium_stick": "Holmium Stick",
+      "block.hafnium.amethyst_block": "Amethyst",
       "item.hafnium.hafnium_armor_chestplate": "Hafnium Chestplate",
       "item.hafnium.cristalized_emerald_sword": "Cristalized_Emerald Sword",
       "block.hafnium.mana_wood_slab": "Mana Slab",
@@ -3029,6 +3051,8 @@
       "block.hafnium.centrifuge": "Centrifuge",
       "block.hafnium.holnium_block": "Block of Holnium",
       "item.hafnium.cristalized_emerald_armor_boots": "Cristalized_Emerald Boots",
+      "item.hafnium.amethyst_hoe": "Amethyst Hoe",
+      "item.hafnium.amethyst_shard": "Amethyst Shard",
       "item.hafnium.hafnium_armor_leggings": "Hafnium Leggings",
       "subtitles.ki": "",
       "block.hafnium.mana_wood_log": "Mana Log",
@@ -3041,6 +3065,7 @@
       "block.hafnium.dead_fence_gate": "Dead Fence Gate",
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
+      "block.hafnium.amethyst_cluster": "Amethyst Cluster",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
