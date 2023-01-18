@@ -109,6 +109,7 @@ public class HafniumModVariables {
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "hafnium_mapvars";
 		public double clearlagnum = 0;
+		public double clearlagnum_in_s = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -121,11 +122,13 @@ public class HafniumModVariables {
 		@Override
 		public void read(CompoundNBT nbt) {
 			clearlagnum = nbt.getDouble("clearlagnum");
+			clearlagnum_in_s = nbt.getDouble("clearlagnum_in_s");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putDouble("clearlagnum", clearlagnum);
+			nbt.putDouble("clearlagnum_in_s", clearlagnum_in_s);
 			return nbt;
 		}
 

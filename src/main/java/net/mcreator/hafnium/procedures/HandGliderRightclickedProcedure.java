@@ -1,6 +1,6 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
 
 import net.mcreator.hafnium.HafniumModVariables;
 import net.mcreator.hafnium.HafniumMod;
@@ -10,18 +10,29 @@ import java.util.Map;
 public class HandGliderRightclickedProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				HafniumMod.LOGGER.warn("Failed to load dependency world for procedure HandGliderRightclicked!");
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure HandGliderRightclicked!");
 			return;
 		}
-		IWorld world = (IWorld) dependencies.get("world");
-		if (HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled) {
-			HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled = (false);
-			HafniumModVariables.MapVariables.get(world).syncData(world);
+		Entity entity = (Entity) dependencies.get("entity");
+		if ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new HafniumModVariables.PlayerVariables())).is_gang_glider_enabled) {
+			{
+				boolean _setval = (false);
+				entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.is_gang_glider_enabled = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		} else {
-			HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled = (true);
-			HafniumModVariables.MapVariables.get(world).syncData(world);
+			{
+				boolean _setval = (true);
+				entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.is_gang_glider_enabled = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }
