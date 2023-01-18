@@ -29,11 +29,12 @@
     ]
   },
   "erika": {
-    "category": "music",
+    "category": "neutral",
+    "subtitle": "subtitles.erika",
     "sounds": [
       {
         "name": "hafnium:german-soldiers-song-erika-with-english-subtitles_1",
-        "stream": true
+        "stream": false
       }
     ]
   }

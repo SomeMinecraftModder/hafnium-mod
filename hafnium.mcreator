@@ -2890,12 +2890,20 @@
       "registry_name": "clear_lag_overlay"
     },
     {
-      "name": "Erika",
-      "type": "musicdisc",
+      "name": "TuxRedstoneOn",
+      "type": "procedure",
       "sortid": 259,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "erika"
+      "registry_name": "tux_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2972,8 +2980,8 @@
       "files": [
         "german-soldiers-song-erika-with-english-subtitles_1"
       ],
-      "category": "music",
-      "subtitle": ""
+      "category": "neutral",
+      "subtitle": "Vive Erika \u003c3"
     }
   ],
   "language_map": {
@@ -3158,7 +3166,6 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
-      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
       "item.hafnium.erika": "Erika",
