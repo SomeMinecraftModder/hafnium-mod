@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:deleted_mod_element"
+    },
+    "1": {
+      "item": "hafnium:deleted_mod_element"
+    },
+    "2": {
+      "item": "hafnium:deleted_mod_element"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "hafnium:deleted_mod_element",
+    "count": 1
+  }
+}

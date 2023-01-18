@@ -2588,6 +2588,282 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "nugget_ingot"
+    },
+    {
+      "name": "AmethystCluster",
+      "type": "block",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_cluster"
+    },
+    {
+      "name": "DeadSpawnerClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_spawner_client_display_random_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmethystAxe",
+      "type": "tool",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe"
+    },
+    {
+      "name": "HolmiumNuggetToIngot",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holmium_nugget_to_ingot"
+    },
+    {
+      "name": "AmethystPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe_recipe"
+    },
+    {
+      "name": "AmethystBlockToShard",
+      "type": "recipe",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block_to_shard"
+    },
+    {
+      "name": "AmethystShardToBlock",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shard_to_block"
+    },
+    {
+      "name": "DarkLordEntityIsHurt",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkLordOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkLordOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmethystShard",
+      "type": "item",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shard"
+    },
+    {
+      "name": "AmethystShovelRecipe",
+      "type": "recipe",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel_recipe"
+    },
+    {
+      "name": "AmethystBlock",
+      "type": "block",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block"
+    },
+    {
+      "name": "AmethystShovel",
+      "type": "tool",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel"
+    },
+    {
+      "name": "AmethystHoe",
+      "type": "tool",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe"
+    },
+    {
+      "name": "AmethystSwordRecipe",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword_recipe"
+    },
+    {
+      "name": "AmethystHoeRecipe",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe_recipe"
+    },
+    {
+      "name": "DarkLordLootTable",
+      "type": "loottable",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_loot_table"
+    },
+    {
+      "name": "AmethystSword",
+      "type": "tool",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword"
+    },
+    {
+      "name": "SafeZone",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_zone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmethystPickaxe",
+      "type": "tool",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe"
+    },
+    {
+      "name": "AmethystAxeRecipe",
+      "type": "recipe",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe_recipe"
     }
   ],
   "variable_elements": [

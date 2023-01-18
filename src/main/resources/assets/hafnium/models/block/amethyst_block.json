@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "hafnium:blocks/amethyst_block",
+    "top": "hafnium:blocks/amethyst_block",
+    "side": "hafnium:blocks/amethyst_block",
+    "overlay": "hafnium:blocks/amethyst_block",
+    "particle": "hafnium:blocks/amethyst_block"
+  }
+}

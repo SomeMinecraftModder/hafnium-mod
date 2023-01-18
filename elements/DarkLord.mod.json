@@ -5,7 +5,7 @@
     "mobName": "Dark Lord",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "skin_zombie.png",
+    "mobModelTexture": "413bb009dc931d60.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -3407872,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -14871532,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -25,7 +25,7 @@
     },
     "isBoss": true,
     "bossBarColor": "RED",
-    "bossBarType": "NOTCHED_6",
+    "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
     },
@@ -46,16 +46,16 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "attackStrength": 17,
+    "attackKnockback": 1.5,
+    "knockbackResistance": 0.2,
+    "movementSpeed": 0.6,
     "armorBaseValue": 0.0,
-    "trackingRange": 64,
-    "health": 500,
+    "trackingRange": 128,
+    "health": 700,
     "xpAmount": 15,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -63,15 +63,15 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
-    "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
@@ -98,9 +98,18 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "whenMobIsHurt": {
+      "name": "DarkLordEntityIsHurt"
+    },
+    "onMobTickUpdate": {
+      "name": "DarkLordOnEntityTickUpdate"
+    },
+    "onInitialSpawn": {
+      "name": "DarkLordOnInitialEntitySpawn"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

@@ -56,7 +56,7 @@ public class SpawnprotectionProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (!entity.hasPermissionLevel((int) 4)) {
-			if (x < 10 && x > -10 || z < 10 && z > -10) {
+			if (x < 350 && x > -350 && z < 350 && z > -350) {
 				if (dependencies.get("event") != null) {
 					Object _obj = dependencies.get("event");
 					if (_obj instanceof Event) {
