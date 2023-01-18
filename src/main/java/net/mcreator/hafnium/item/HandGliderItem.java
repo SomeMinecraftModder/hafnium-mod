@@ -72,7 +72,7 @@ public class HandGliderItem extends HafniumModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			HandGliderRightclickedProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
+			HandGliderRightclickedProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}
@@ -85,9 +85,8 @@ public class HandGliderItem extends HafniumModElements.ModElement {
 			double z = entity.getPosZ();
 			if (selected)
 
-				HandGliderItemInHandTickProcedure
-						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+				HandGliderItemInHandTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 	}
 }

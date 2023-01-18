@@ -1,6 +1,5 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraft.world.IWorld;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.hafnium.HafniumModVariables;
@@ -11,22 +10,22 @@ import java.util.Map;
 public class HandGliderItemInHandTickProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				HafniumMod.LOGGER.warn("Failed to load dependency world for procedure HandGliderItemInHandTick!");
-			return;
-		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure HandGliderItemInHandTick!");
 			return;
 		}
-		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
-		if (HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled) {
+		if ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new HafniumModVariables.PlayerVariables())).is_gang_glider_enabled) {
 			if (entity.isOnGround()) {
-				HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled = (false);
-				HafniumModVariables.MapVariables.get(world).syncData(world);
+				{
+					boolean _setval = (false);
+					entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.is_gang_glider_enabled = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 			if (entity.isSneaking()) {
 				if (Math.abs(entity.getMotion().getX()) + Math.abs(entity.getMotion().getZ()) < 10) {
