@@ -1,9 +1,19 @@
 package net.mcreator.hafnium.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.world.BlockEvent;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.Map;
+import java.util.HashMap;
 
 public class SpawnprotectionplaceProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -42,11 +52,9 @@ public class SpawnprotectionplaceProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure Spawnprotectionplace!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if (!entity.hasPermissionLevel((int) 4)) {
 			if (x < 350 && x > -350 && z < 350 && z > -350) {
 				if (dependencies.get("event") != null) {
@@ -60,5 +68,4 @@ public class SpawnprotectionplaceProcedure {
 			}
 		}
 	}
-
 }

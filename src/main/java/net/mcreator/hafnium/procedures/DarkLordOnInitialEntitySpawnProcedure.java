@@ -1,6 +1,12 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.IWorld;
+import net.minecraft.particles.ParticleTypes;
+
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.Map;
 
 public class DarkLordOnInitialEntitySpawnProcedure {
 
@@ -25,15 +31,12 @@ public class DarkLordOnInitialEntitySpawnProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency z for procedure DarkLordOnInitialEntitySpawn!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-
 		if (world instanceof ServerWorld) {
 			((ServerWorld) world).spawnParticle(ParticleTypes.LARGE_SMOKE, x, y, z, (int) 15, 3, 3, 3, 1);
 		}
 	}
-
 }

@@ -1,6 +1,12 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.IWorld;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.hafnium.HafniumModVariables;
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.Map;
 
 public class HandGliderItemInHandTickProcedure {
 
@@ -15,10 +21,8 @@ public class HandGliderItemInHandTickProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure HandGliderItemInHandTick!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if (HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled) {
 			if (entity.isOnGround()) {
 				HafniumModVariables.MapVariables.get(world).is_gang_glider_enabled = (false);
@@ -36,5 +40,4 @@ public class HandGliderItemInHandTickProcedure {
 			}
 		}
 	}
-
 }

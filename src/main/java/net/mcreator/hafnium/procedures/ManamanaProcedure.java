@@ -1,6 +1,28 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
+
+import net.mcreator.hafnium.item.StabilizedManaItem;
+import net.mcreator.hafnium.item.PositivemanaItem;
+import net.mcreator.hafnium.item.NegativemanaItem;
+import net.mcreator.hafnium.item.HolmiumnuggetItem;
+import net.mcreator.hafnium.item.Cristalized_EmeraldItem;
+import net.mcreator.hafnium.item.CorruptionItem;
+import net.mcreator.hafnium.item.ChaoticmanaItem;
+import net.mcreator.hafnium.block.ManaflowerBlock;
+import net.mcreator.hafnium.block.LiquidmanaBlock;
+import net.mcreator.hafnium.block.HolniumOreBlock;
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.function.Supplier;
+import java.util.Map;
 
 public class ManamanaProcedure {
 
@@ -10,9 +32,7 @@ public class ManamanaProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure Manamana!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
@@ -894,5 +914,4 @@ public class ManamanaProcedure {
 			}
 		}
 	}
-
 }

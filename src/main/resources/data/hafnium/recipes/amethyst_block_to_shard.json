@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "hafnium:deleted_mod_element"
+      "item": "hafnium:amethyst_block"
     }
   ],
   "result": {
-    "item": "hafnium:deleted_mod_element",
+    "item": "hafnium:amethyst_shard",
     "count": 9
   }
 }
