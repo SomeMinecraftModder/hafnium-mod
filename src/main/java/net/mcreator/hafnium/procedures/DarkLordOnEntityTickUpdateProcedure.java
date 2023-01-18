@@ -2,12 +2,19 @@ package net.mcreator.hafnium.procedures;
 
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.hafnium.HafniumMod;
 
+import java.util.stream.Collectors;
+import java.util.function.Function;
 import java.util.Map;
+import java.util.List;
+import java.util.Comparator;
 
 public class DarkLordOnEntityTickUpdateProcedure {
 
@@ -45,6 +52,21 @@ public class DarkLordOnEntityTickUpdateProcedure {
 		world.addParticle(ParticleTypes.ENCHANTED_HIT, x, y, z, 0, (-1), 0);
 		if (y - world.getHeight(Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z) > 5) {
 			entity.setMotion((entity.getMotion().getX()), (-0.5), (entity.getMotion().getZ()));
+		}
+		{
+			List<Entity> _entfound = world
+					.getEntitiesWithinAABB(Entity.class,
+							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).collect(Collectors.toList());
+			for (Entity entityiterator : _entfound) {
+				if (entityiterator instanceof GolemEntity) {
+					entityiterator.attackEntityFrom(DamageSource.GENERIC, (float) 15);
+				}
+			}
 		}
 	}
 }
