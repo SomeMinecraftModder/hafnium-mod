@@ -25,11 +25,11 @@ public class Cristalized_EmeraldPickaxeItem extends HafniumModElements.ModElemen
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 250;
+				return 750;
 			}
 
 			public float getEfficiency() {
-				return 6f;
+				return 12f;
 			}
 
 			public float getAttackDamage() {
@@ -37,7 +37,7 @@ public class Cristalized_EmeraldPickaxeItem extends HafniumModElements.ModElemen
 			}
 
 			public int getHarvestLevel() {
-				return 2;
+				return 6;
 			}
 
 			public int getEnchantability() {

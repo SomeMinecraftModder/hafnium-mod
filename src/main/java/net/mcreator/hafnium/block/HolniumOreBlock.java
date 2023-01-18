@@ -118,8 +118,8 @@ public class HolniumOreBlock extends HafniumModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 2)).range(14)
-					.square().func_242731_b(2);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 1)).range(14)
+					.square().func_242731_b(1);
 			event.getRegistry().register(feature.setRegistryName("holnium_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("hafnium:holnium_ore"), configuredFeature);
 		}

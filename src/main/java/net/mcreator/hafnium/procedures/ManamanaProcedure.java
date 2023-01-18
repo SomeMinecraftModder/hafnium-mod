@@ -12,7 +12,7 @@ import net.minecraft.block.Blocks;
 import net.mcreator.hafnium.item.StabilizedManaItem;
 import net.mcreator.hafnium.item.PositivemanaItem;
 import net.mcreator.hafnium.item.NegativemanaItem;
-import net.mcreator.hafnium.item.HolniumItem;
+import net.mcreator.hafnium.item.HolmiumnuggetItem;
 import net.mcreator.hafnium.item.Cristalized_EmeraldItem;
 import net.mcreator.hafnium.item.CorruptionItem;
 import net.mcreator.hafnium.item.ChaoticmanaItem;
@@ -222,7 +222,7 @@ public class ManamanaProcedure {
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(HolniumItem.block);
+							ItemStack _setstack = new ItemStack(HolmiumnuggetItem.block);
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(int sltid) {
 									if (entity instanceof ServerPlayerEntity) {

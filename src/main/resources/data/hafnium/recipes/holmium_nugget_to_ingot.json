@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "1": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "2": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "3": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "4": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "5": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "6": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "7": {
+      "item": "hafnium:holmiumnugget"
+    },
+    "8": {
+      "item": "hafnium:holmiumnugget"
+    }
+  },
+  "result": {
+    "item": "hafnium:holnium",
+    "count": 1
+  }
+}

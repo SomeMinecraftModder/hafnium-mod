@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "hafnium:blocks/amethyst_cluster",
+    "particle": "hafnium:blocks/amethyst_cluster"
+  }
+}

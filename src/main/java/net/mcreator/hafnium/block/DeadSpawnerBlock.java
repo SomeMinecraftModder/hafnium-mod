@@ -17,15 +17,18 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.hafnium.procedures.DeadSpawnerPlayerStartsToDestroyProcedure;
+import net.mcreator.hafnium.procedures.DeadSpawnerClientDisplayRandomTickProcedure;
 import net.mcreator.hafnium.HafniumModElements;
 
 import java.util.stream.Stream;
+import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -72,6 +75,21 @@ public class DeadSpawnerBlock extends HafniumModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
+			PlayerEntity entity = Minecraft.getInstance().player;
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+
+			DeadSpawnerClientDisplayRandomTickProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

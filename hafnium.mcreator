@@ -2572,6 +2572,282 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_lord"
+    },
+    {
+      "name": "DarkLordLootTable",
+      "type": "loottable",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_loot_table"
+    },
+    {
+      "name": "DarkLordOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkLordEntityIsHurt",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SafeZone",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "safe_zone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HolmiumNuggetToIngot",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holmium_nugget_to_ingot"
+    },
+    {
+      "name": "DarkLordOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmethystShard",
+      "type": "item",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shard"
+    },
+    {
+      "name": "AmethystCluster",
+      "type": "block",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_cluster"
+    },
+    {
+      "name": "AmethystBlock",
+      "type": "block",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block"
+    },
+    {
+      "name": "AmethystPickaxe",
+      "type": "tool",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe"
+    },
+    {
+      "name": "AmethystAxe",
+      "type": "tool",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe"
+    },
+    {
+      "name": "AmethystSword",
+      "type": "tool",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword"
+    },
+    {
+      "name": "AmethystShovel",
+      "type": "tool",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel"
+    },
+    {
+      "name": "AmethystHoe",
+      "type": "tool",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe"
+    },
+    {
+      "name": "AmethystPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe_recipe"
+    },
+    {
+      "name": "AmethystAxeRecipe",
+      "type": "recipe",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe_recipe"
+    },
+    {
+      "name": "AmethystSwordRecipe",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword_recipe"
+    },
+    {
+      "name": "AmethystShovelRecipe",
+      "type": "recipe",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel_recipe"
+    },
+    {
+      "name": "AmethystHoeRecipe",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe_recipe"
+    },
+    {
+      "name": "AmethystShardToBlock",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shard_to_block"
+    },
+    {
+      "name": "AmethystBlockToShard",
+      "type": "recipe",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block_to_shard"
+    },
+    {
+      "name": "DeadSpawnerClientDisplayRandomTick",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_spawner_client_display_random_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2646,11 +2922,13 @@
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.advanced_casing": "Advanced Casing",
+      "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
+      "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
       "advancements.tuxblock.title": "Tux",
@@ -2666,12 +2944,14 @@
       "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
-      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
+      "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
+      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
       "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
+      "item.hafnium.amethyst_shovel": "Amethyst Shovel",
       "item.hafnium.holnium_axe": "Holnium Axe",
       "item.hafnium.holnium_armor_helmet": "Holnium Helmet",
       "item.hafnium.holnium": "Holnium Ingot",
@@ -2690,6 +2970,7 @@
       "item.hafnium.cristalized_emerald_armor_chestplate": "Cristalized_Emerald Chestplate",
       "item.hafnium.travel_chestplate_leggings": "Travel Leggings",
       "item.hafnium.holmium_stick": "Holmium Stick",
+      "block.hafnium.amethyst_block": "Amethyst",
       "item.hafnium.hafnium_armor_chestplate": "Hafnium Chestplate",
       "item.hafnium.cristalized_emerald_sword": "Cristalized_Emerald Sword",
       "block.hafnium.mana_wood_slab": "Mana Slab",
@@ -2737,6 +3018,8 @@
       "block.hafnium.centrifuge": "Centrifuge",
       "block.hafnium.holnium_block": "Block of Holnium",
       "item.hafnium.cristalized_emerald_armor_boots": "Cristalized_Emerald Boots",
+      "item.hafnium.amethyst_hoe": "Amethyst Hoe",
+      "item.hafnium.amethyst_shard": "Amethyst Shard",
       "item.hafnium.hafnium_armor_leggings": "Hafnium Leggings",
       "subtitles.ki": "",
       "block.hafnium.mana_wood_log": "Mana Log",
@@ -2749,6 +3032,7 @@
       "block.hafnium.dead_fence_gate": "Dead Fence Gate",
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
+      "block.hafnium.amethyst_cluster": "Amethyst Cluster",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -2778,9 +3062,8 @@
     "modid": "hafnium",
     "modName": "Hafnium",
     "version": "1.0.0",
-    "author": "emilien, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "author": "24oulia, LAD_CKY",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -2788,7 +3071,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.hafnium",
     "lockBaseModFiles": false
   },

@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "command",
   "definition": {
-    "commandName": "tpr",
+    "commandName": "rtp",
     "permissionLevel": "No requirement",
     "onCommandExecuted": {
       "name": "TprCommandExecuted"

@@ -27,7 +27,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 public class TprCommand {
 	@SubscribeEvent
 	public static void registerCommands(RegisterCommandsEvent event) {
-		event.getDispatcher().register(LiteralArgumentBuilder.<CommandSource>literal("tpr")
+		event.getDispatcher().register(LiteralArgumentBuilder.<CommandSource>literal("rtp")
 
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(TprCommand::execute)).executes(TprCommand::execute));
 	}
