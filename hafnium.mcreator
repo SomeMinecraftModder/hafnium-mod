@@ -2899,6 +2899,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Marseillaise",
+      "type": "musicdisc",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marseillaise"
     }
   ],
   "variable_elements": [
@@ -2969,6 +2977,14 @@
       ],
       "category": "block",
       "subtitle": "Advanced furnace blast"
+    },
+    {
+      "name": "marseillaise",
+      "files": [
+        "videoplayback"
+      ],
+      "category": "music",
+      "subtitle": "#france"
     }
   ],
   "language_map": {
@@ -3039,11 +3055,13 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquid mana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
@@ -3104,6 +3122,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",
@@ -3178,11 +3197,13 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquidmana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
@@ -3243,6 +3264,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",
@@ -3317,11 +3339,13 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquidmana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
@@ -3382,6 +3406,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",

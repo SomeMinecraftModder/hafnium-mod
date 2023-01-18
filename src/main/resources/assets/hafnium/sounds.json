@@ -27,5 +27,15 @@
         "stream": false
       }
     ]
+  },
+  "marseillaise": {
+    "category": "music",
+    "subtitle": "subtitles.marseillaise",
+    "sounds": [
+      {
+        "name": "hafnium:videoplayback",
+        "stream": true
+      }
+    ]
   }
 }
