@@ -94,13 +94,13 @@
       {
         "type": "button",
         "data": {
-          "text": "Cuire",
+          "text": "Smelt",
           "onClick": {
             "name": "AdvancedSmelterGuiOnClickedButton"
           },
           "width": 51,
           "height": 20,
-          "name": "Cuire",
+          "name": "Smelt",
           "x": 177,
           "y": 98
         }

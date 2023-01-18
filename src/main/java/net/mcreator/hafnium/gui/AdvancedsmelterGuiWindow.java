@@ -91,7 +91,7 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 78, 51, 20, new StringTextComponent("Cuire"), e -> {
+		this.addButton(new Button(this.guiLeft + 88, this.guiTop + 78, 51, 20, new StringTextComponent("Smelt"), e -> {
 			if (true) {
 				HafniumMod.PACKET_HANDLER.sendToServer(new AdvancedsmelterGui.ButtonPressedMessage(0, x, y, z));
 				AdvancedsmelterGui.handleButtonAction(entity, 0, x, y, z);

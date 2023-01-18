@@ -89,7 +89,7 @@ public class SmelterguiGuiWindow extends ContainerScreen<SmelterguiGui.GuiContai
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 69, this.guiTop + 52, 46, 20, new StringTextComponent("Cuire"), e -> {
+		this.addButton(new Button(this.guiLeft + 69, this.guiTop + 52, 46, 20, new StringTextComponent("Smelt"), e -> {
 			if (true) {
 				HafniumMod.PACKET_HANDLER.sendToServer(new SmelterguiGui.ButtonPressedMessage(0, x, y, z));
 				SmelterguiGui.handleButtonAction(entity, 0, x, y, z);

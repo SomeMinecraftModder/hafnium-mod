@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "fluid",
   "definition": {
-    "name": "Liquidmana",
+    "name": "Liquid mana",
     "bucketName": "Liquid Mana Bucket",
     "textureStill": "liquid_mana",
     "textureFlowing": "moving_liquid_mana",

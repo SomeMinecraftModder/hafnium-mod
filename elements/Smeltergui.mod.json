@@ -41,13 +41,13 @@
       {
         "type": "button",
         "data": {
-          "text": "Cuire",
+          "text": "Smelt",
           "onClick": {
             "name": "Smelterguicook"
           },
           "width": 46,
           "height": 20,
-          "name": "Cuire",
+          "name": "Smelt",
           "x": 195,
           "y": 89
         }

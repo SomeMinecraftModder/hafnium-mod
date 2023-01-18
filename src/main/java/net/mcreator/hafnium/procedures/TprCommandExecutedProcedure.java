@@ -29,8 +29,8 @@ public class TprCommandExecutedProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		double random_x = 0;
 		double random_z = 0;
-		random_x = (MathHelper.nextDouble(new Random(), -100000, 100000));
-		random_z = (MathHelper.nextDouble(new Random(), -100000, 100000));
+		random_x = (MathHelper.nextDouble(new Random(), -1000, 1000));
+		random_z = (MathHelper.nextDouble(new Random(), -1000, 1000));
 		{
 			Entity _ent = entity;
 			_ent.setPositionAndUpdate(random_x, (world.getHeight(Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, (int) random_x, (int) random_z)),
