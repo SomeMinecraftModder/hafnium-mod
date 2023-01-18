@@ -7,35 +7,35 @@
   ],
   "key": {
     "0": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "1": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "2": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "3": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "4": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "5": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "6": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "7": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     },
     "8": {
-      "item": "hafnium:amethyst_shard"
+      "item": "hafnium:deleted_mod_element"
     }
   },
   "result": {
-    "item": "hafnium:amethyst_block",
+    "item": "hafnium:deleted_mod_element",
     "count": 1
   }
 }

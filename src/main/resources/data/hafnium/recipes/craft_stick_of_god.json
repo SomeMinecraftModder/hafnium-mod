@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "hafnium:strenght_stick"
+    },
+    "3": {
+      "item": "hafnium:speed_stick"
+    },
+    "4": {
+      "item": "hafnium:holmium_stick"
+    },
+    "5": {
+      "item": "hafnium:heal_stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "hafnium:stick_of_god",
+    "count": 1
+  }
+}

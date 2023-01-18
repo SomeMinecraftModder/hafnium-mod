@@ -1,21 +1,11 @@
 
 package net.mcreator.hafnium.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.hafnium.HafniumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @HafniumModElements.ModElement.Tag
 public class HolniumSwordItem extends HafniumModElements.ModElement {
+
 	@ObjectHolder("hafnium:holnium_sword")
 	public static final Item block = null;
 
@@ -50,11 +40,14 @@ public class HolniumSwordItem extends HafniumModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(HolniumItem.block));
 			}
 		}, 3, 11f, new Item.Properties().group(ItemGroup.COMBAT)) {
+
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
+
 		}.setRegistryName("holnium_sword"));
 	}
+
 }

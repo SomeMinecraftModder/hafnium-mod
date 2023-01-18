@@ -1,19 +1,11 @@
 
 package net.mcreator.hafnium.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.AxeItem;
-
-import net.mcreator.hafnium.HafniumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @HafniumModElements.ModElement.Tag
 public class AmethystAxeItem extends HafniumModElements.ModElement {
+
 	@ObjectHolder("hafnium:amethyst_axe")
 	public static final Item block = null;
 
@@ -48,6 +40,8 @@ public class AmethystAxeItem extends HafniumModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(AmethystShardItem.block));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+
 		}.setRegistryName("amethyst_axe"));
 	}
+
 }
