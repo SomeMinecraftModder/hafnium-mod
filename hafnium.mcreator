@@ -2454,12 +2454,12 @@
       "registry_name": "advanced_smelter_controler_craft"
     },
     {
-      "name": "AdvancedCasing",
-      "type": "block",
+      "name": "CraftStickOfGod",
+      "type": "recipe",
       "sortid": 225,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "advanced_casing"
+      "registry_name": "craft_stick_of_god"
     },
     {
       "name": "AdvancedCasingCraft",
@@ -2468,6 +2468,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "advanced_casing_craft"
+    },
+    {
+      "name": "Temple",
+      "type": "structure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "temple"
+    },
+    {
+      "name": "Holmiumnugget",
+      "type": "item",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holmiumnugget"
+    },
+    {
+      "name": "Tpr",
+      "type": "command",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tpr"
+    },
+    {
+      "name": "DarkLord",
+      "type": "livingentity",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_lord"
+    },
+    {
+      "name": "AdvancedCasing",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_casing"
+    },
+    {
+      "name": "Tower",
+      "type": "structure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower"
     },
     {
       "name": "DeadSpawnerPlayerStartsToDestroy",
@@ -2514,22 +2562,6 @@
       "registry_name": "towerloottable"
     },
     {
-      "name": "Temple",
-      "type": "structure",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "temple"
-    },
-    {
-      "name": "Tower",
-      "type": "structure",
-      "sortid": 230,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tower"
-    },
-    {
       "name": "TprCommandExecuted",
       "type": "procedure",
       "sortid": 231,
@@ -2550,28 +2582,12 @@
       }
     },
     {
-      "name": "Tpr",
-      "type": "command",
-      "sortid": 231,
+      "name": "NuggetIngot",
+      "type": "recipe",
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tpr"
-    },
-    {
-      "name": "Holmiumnugget",
-      "type": "item",
-      "sortid": 232,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "holmiumnugget"
-    },
-    {
-      "name": "DarkLord",
-      "type": "livingentity",
-      "sortid": 232,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_lord"
+      "registry_name": "nugget_ingot"
     },
     {
       "name": "AmethystCluster",
@@ -2850,20 +2866,15 @@
       "registry_name": "amethyst_axe_recipe"
     },
     {
-      "name": "CraftStickOfGod",
-      "type": "recipe",
-      "sortid": 225,
+      "name": "ClearLag",
+      "type": "procedure",
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "craft_stick_of_god"
-    },
-    {
-      "name": "NuggetIngot",
-      "type": "recipe",
-      "sortid": 233,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nugget_ingot"
+      "registry_name": "clear_lag",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -2894,8 +2905,14 @@
     {
       "name": "is_gang_glider_enabled",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "clearlagnum",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2961,8 +2978,8 @@
       "block.hafnium.cave_block": "Cave Block",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
-      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
+      "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
