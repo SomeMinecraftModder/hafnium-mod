@@ -2873,7 +2873,12 @@
       "locked_code": false,
       "registry_name": "clear_lag",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -2883,6 +2888,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "clear_lag_overlay"
+    },
+    {
+      "name": "Erika",
+      "type": "musicdisc",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "erika"
     }
   ],
   "variable_elements": [
@@ -2953,6 +2966,14 @@
       ],
       "category": "block",
       "subtitle": "Advanced furnace blast"
+    },
+    {
+      "name": "erika",
+      "files": [
+        "german-soldiers-song-erika-with-english-subtitles_1"
+      ],
+      "category": "neutral",
+      "subtitle": "Vive Erika \u003c3"
     }
   ],
   "language_map": {
@@ -2995,8 +3016,10 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
+      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquid mana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
+      "item.hafnium.erika": "Erika",
       "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
       "item.hafnium.amethyst_shovel": "Amethyst Shovel",
       "item.hafnium.holnium_axe": "Holnium Axe",
@@ -3036,6 +3059,7 @@
       "item.hafnium.holnium_armor_boots": "Holnium Boots",
       "item.hafnium.cristalized_emerald": "Cristalized_Emerald",
       "item.hafnium.speed_stick": "Speed Stick",
+      "item.hafnium.erika.desc": "J\u0027adore erika \u003c3",
       "item.hafnium.dynamiteprojectile": "Dynamiteprojectile",
       "advancements.cookholmium.title": "Holmium!",
       "subtitles.advanced_furnace_start": "Advanced furnace blast",
@@ -3134,8 +3158,10 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
+      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
+      "item.hafnium.erika": "Erika",
       "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
       "item.hafnium.amethyst_shovel": "Amethyst Shovel",
       "item.hafnium.holnium_axe": "Holnium Axe",
@@ -3175,6 +3201,7 @@
       "item.hafnium.holnium_armor_boots": "Holnium Boots",
       "item.hafnium.cristalized_emerald": "Cristalized_Emerald",
       "item.hafnium.speed_stick": "Speed Stick",
+      "item.hafnium.erika.desc": "J\u0027adore erika \u003c3",
       "item.hafnium.dynamiteprojectile": "Dynamiteprojectile",
       "advancements.cookholmium.title": "Holmium!",
       "subtitles.advanced_furnace_start": "Advanced furnace blast",
@@ -3273,8 +3300,10 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
+      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
+      "item.hafnium.erika": "Erika",
       "block.hafnium.mana_wood_pressure_plate": "Mana Pressure Plate",
       "item.hafnium.amethyst_shovel": "Amethyst Shovel",
       "item.hafnium.holnium_axe": "Holnium Axe",
@@ -3314,6 +3343,7 @@
       "item.hafnium.holnium_armor_boots": "Holnium Boots",
       "item.hafnium.cristalized_emerald": "Cristalized_Emerald",
       "item.hafnium.speed_stick": "Speed Stick",
+      "item.hafnium.erika.desc": "J\u0027adore erika \u003c3",
       "item.hafnium.dynamiteprojectile": "Dynamiteprojectile",
       "advancements.cookholmium.title": "Holmium!",
       "subtitles.advanced_furnace_start": "Advanced furnace blast",
