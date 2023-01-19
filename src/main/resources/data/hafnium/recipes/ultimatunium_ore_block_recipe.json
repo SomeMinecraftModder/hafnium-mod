@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:ultimatunium"
+    },
+    "1": {
+      "item": "hafnium:ultimatunium"
+    },
+    "2": {
+      "item": "hafnium:ultimatunium"
+    },
+    "3": {
+      "item": "hafnium:ultimatunium"
+    },
+    "4": {
+      "item": "hafnium:ultimatunium"
+    },
+    "5": {
+      "item": "hafnium:ultimatunium"
+    },
+    "6": {
+      "item": "hafnium:ultimatunium"
+    },
+    "7": {
+      "item": "hafnium:ultimatunium"
+    },
+    "8": {
+      "item": "hafnium:ultimatunium"
+    }
+  },
+  "result": {
+    "item": "hafnium:ultimatunium_block",
+    "count": 1
+  }
+}

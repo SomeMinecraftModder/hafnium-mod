@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hafnium:blocks/ultimatunium_ore_block",
+    "particle": "hafnium:blocks/ultimatunium_ore_block"
+  }
+}

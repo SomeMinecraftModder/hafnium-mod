@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hafnium:ultimatunium_block"
+    }
+  ],
+  "result": {
+    "item": "hafnium:ultimatunium",
+    "count": 9
+  }
+}

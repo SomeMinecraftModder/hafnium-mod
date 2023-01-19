@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "hafnium_ore",
+    "texture": "ultimatunium_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Hafnium Ore",
+    "name": "Ultimatunium Ore",
     "specialInfo": [],
-    "hardness": 9.0,
-    "resistance": 12.041123426403463,
+    "hardness": 3.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -44,7 +44,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:HafniumIngot"
+      "value": "CUSTOM:Ultimatunium"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -56,7 +56,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 5,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -133,9 +133,9 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 5,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 23
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 7,
+    "minGenerateHeight": 25,
+    "maxGenerateHeight": 63
   }
 }

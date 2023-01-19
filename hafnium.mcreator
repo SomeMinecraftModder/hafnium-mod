@@ -2900,6 +2900,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "Marseillaise",
+      "type": "musicdisc",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marseillaise"
+    },
+    {
+      "name": "Ultimatunium",
+      "type": "item",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium"
+    },
+    {
+      "name": "UltimatuniumOre",
+      "type": "block",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore"
+    },
+    {
+      "name": "UltimatuniumBlock",
+      "type": "block",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_block"
+    },
+    {
+      "name": "UltimatuniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore_block_recipe"
+    },
+    {
+      "name": "UltimatuniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_block_ore_recipe"
+    },
+    {
+      "name": "UltimatuniumOreSmelting",
+      "type": "recipe",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore_smelting"
     }
   ],
   "variable_elements": [
@@ -2972,6 +3028,14 @@
       "subtitle": "Advanced furnace blast"
     },
     {
+      "name": "marseillaise",
+      "files": [
+        "videoplayback"
+      ],
+      "category": "music",
+      "subtitle": "#france"
+    },
+    {
       "name": "erika",
       "files": [
         "german-soldiers-song-erika-with-english-subtitles_1"
@@ -3015,6 +3079,7 @@
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3050,12 +3115,15 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquid mana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3108,6 +3176,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3116,6 +3185,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",
@@ -3157,6 +3227,7 @@
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3192,12 +3263,15 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquidmana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3250,6 +3324,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3258,6 +3333,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",
@@ -3299,6 +3375,7 @@
       "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3334,12 +3411,15 @@
       "block.hafnium.mana_wood_slab": "Mana Slab",
       "item.hafnium.holnium_armor_leggings": "Holnium Leggings",
       "block.hafnium.liquidmana": "Liquidmana",
+      "subtitles.marseillaise": "#france",
       "item.hafnium.chaoticmana": "Chaotic mana",
       "item.hafnium.holnium_sword": "Holnium Sword",
       "item.hafnium.travel_chestplate_boots": "Travel Boots",
       "item.hafnium.holnium_hoe": "Holnium Hoe",
       "advancements.xray.title": "Xray",
+      "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3392,6 +3472,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3400,6 +3481,7 @@
       "biome.hafnium.darkplain": "Darkplain",
       "biome.hafnium.manaforest": "Manaforest",
       "block.hafnium.dead_log": "Dead Log",
+      "item.hafnium.marseillaise.desc": "Claude Joseph Rouget de Lisle - La Marseillaise",
       "item.hafnium.corruption": "Corruption",
       "advancements.xray.descr": "Comment Xray sans se faire ban",
       "block.hafnium.corrupeddirt": "Corruped dirt",

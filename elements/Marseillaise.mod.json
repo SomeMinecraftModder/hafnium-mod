@@ -1,0 +1,17 @@
+{
+  "_fv": 33,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "mar",
+    "name": "Marseillaise",
+    "description": "Claude Joseph Rouget de Lisle - La Marseillaise",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:marseillaise"
+    },
+    "specialInfo": [],
+    "hasGlow": true
+  }
+}
