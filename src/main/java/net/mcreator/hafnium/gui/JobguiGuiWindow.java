@@ -37,7 +37,7 @@ public class JobguiGuiWindow extends ContainerScreen<JobguiGui.GuiContainerMod> 
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/jobgui.png");
+	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/screens/jobgui.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

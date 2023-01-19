@@ -92,6 +92,7 @@ public class DarkLordEntity extends HafniumModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 700);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 17);
+			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.2);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 1.5);
 			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.6);

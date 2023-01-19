@@ -2112,10 +2112,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -2336,8 +2332,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
@@ -2873,7 +2869,12 @@
       "locked_code": false,
       "registry_name": "clear_lag",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -2907,6 +2908,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "marseillaise"
+    },
+    {
+      "name": "Ultimatunium",
+      "type": "item",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium"
+    },
+    {
+      "name": "UltimatuniumOre",
+      "type": "block",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore"
+    },
+    {
+      "name": "UltimatuniumBlock",
+      "type": "block",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_block"
+    },
+    {
+      "name": "UltimatuniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore_block_recipe"
+    },
+    {
+      "name": "UltimatuniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_block_ore_recipe"
+    },
+    {
+      "name": "UltimatuniumOreSmelting",
+      "type": "recipe",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimatunium_ore_smelting"
     }
   ],
   "variable_elements": [
@@ -2998,8 +3047,8 @@
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -3011,15 +3060,15 @@
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "advancements.tuxblock.title": "Tux",
       "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "advancements.tuxblock.title": "Tux",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -3027,9 +3076,10 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
+      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3073,6 +3123,7 @@
       "advancements.xray.title": "Xray",
       "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3125,6 +3176,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3143,8 +3195,8 @@
     },
     "es_es": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -3156,15 +3208,15 @@
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "advancements.tuxblock.title": "Tux",
       "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "advancements.tuxblock.title": "Tux",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -3172,9 +3224,10 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
+      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3217,6 +3270,7 @@
       "advancements.xray.title": "Xray",
       "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3269,6 +3323,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3287,8 +3342,8 @@
     },
     "fr_fr": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Minerais d\u0027Uranium",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
@@ -3300,15 +3355,15 @@
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "advancements.tuxblock.title": "Tux",
+      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -3316,9 +3371,10 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
+      "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
       "item.hafnium.amethyst_pickaxe": "Amethyst Pickaxe",
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
@@ -3362,6 +3418,7 @@
       "advancements.xray.title": "Xray",
       "item.hafnium.marseillaise": "Marseillaise",
       "item.hafnium.cuprite": "Cuprite",
+      "block.hafnium.ultimatunium_ore": "Ultimatunium Ore",
       "block.hafnium.advancedsmeltercontroler": "Advanced smelter controler",
       "block.hafnium.dead_wood": "Dead Wood",
       "block.hafnium.manaflower": "Manaflower",
@@ -3414,6 +3471,7 @@
       "item.hafnium.hafnium_armor_boots": "Hafnium Boots",
       "advancements.eathafnium.descr": "Manger de l\u0027hafnium.",
       "block.hafnium.amethyst_cluster": "Amethyst Cluster",
+      "block.hafnium.ultimatunium_block": "Block of Ultimatunium",
       "block.hafnium.dead_stairs": "Dead Stairs",
       "item.hafnium.travel_stick": "Travel Stick",
       "block.hafnium.dead_button": "Dead Button",
@@ -3458,5 +3516,5 @@
     "modElementsPackage": "net.mcreator.hafnium",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202200234517
 }
