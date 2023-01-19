@@ -2956,6 +2956,25 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ultimatunium_ore_smelting"
+    },
+    {
+      "name": "LobbyProcedure",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobby_procedure",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Lobby",
+      "type": "command",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobby"
     }
   ],
   "variable_elements": [
