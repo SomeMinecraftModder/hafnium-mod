@@ -69,7 +69,7 @@ public class ClearLagProcedure {
 					if (mcserv != null)
 						mcserv.getPlayerList().func_232641_a_(
 								new StringTextComponent(
-										"\u00A7a[Hafnium] \u00A74 Toutes les entit\u00E9s vont \u00EAtre supprim\u00E9s dans 30 seconde !"),
+										"\u00A7a[Hafnium] \u00A74 Toutes les entit\u00E9s vont \u00EAtre supprim\u00E9s dans 30 secondes !"),
 								ChatType.SYSTEM, Util.DUMMY_UUID);
 				}
 			}

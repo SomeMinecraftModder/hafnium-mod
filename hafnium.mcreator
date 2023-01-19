@@ -3040,7 +3040,7 @@
       "files": [
         "german-soldiers-song-erika-with-english-subtitles_1"
       ],
-      "category": "neutral",
+      "category": "music",
       "subtitle": "Vive Erika \u003c3"
     }
   ],
@@ -3076,8 +3076,8 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "block.hafnium.uranium_block": "Block of Uranium",
       "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
+      "block.hafnium.uranium_block": "Block of Uranium",
       "block.hafnium.cave_block": "Cave Block",
       "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
@@ -3085,7 +3085,7 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
-      "subtitles.erika": "",
+      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquid mana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
       "item.hafnium.erika": "Erika",
@@ -3233,6 +3233,7 @@
       "item.hafnium.travel_chestplate_chestplate": "Travel Chestplate",
       "block.hafnium.mana_wood_fence_gate": "Mana Fence Gate",
       "block.hafnium.dead_leaves": "Dead Leaves",
+      "subtitles.erika": "Vive Erika \u003c3",
       "fluid.hafnium.liquidmana": "Liquidmana",
       "item.hafnium.hafnium_armor_helmet": "Hafnium Helmet",
       "item.hafnium.erika": "Erika",
@@ -3371,8 +3372,8 @@
       "item.hafnium.travel_chestplate_helmet": "Travel Chestplate Helmet",
       "block.hafnium.corruptedgrass": "Corrupted grass",
       "item.hafnium.hafnium_axe": "Hafnium Axe",
-      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.uranium_block": "Block of Uranium",
+      "item.hafnium.hafnium_pickaxe": "Hafnium Pickaxe",
       "block.hafnium.cave_block": "Cave Block",
       "item.hafnium.ultimatunium": "Ultimatunium",
       "advancements.tuxblock.descr": "Bravo, tu n\u0027a pas de vie :)))))))))))))))))))))))))))))",
