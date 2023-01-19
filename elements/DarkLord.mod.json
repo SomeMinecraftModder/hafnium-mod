@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Dark Lord",
@@ -52,6 +52,7 @@
     "movementSpeed": 0.6,
     "armorBaseValue": 0.0,
     "trackingRange": 128,
+    "followRange": 16,
     "health": 700,
     "xpAmount": 15,
     "waterMob": false,

@@ -39,7 +39,7 @@ public class SmelterguiGuiWindow extends ContainerScreen<SmelterguiGui.GuiContai
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/smeltergui.png");
+	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/screens/smeltergui.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

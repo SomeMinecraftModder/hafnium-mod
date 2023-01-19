@@ -39,7 +39,7 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 		this.ySize = 200;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/advancedsmelter.png");
+	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/screens/advancedsmelter.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {

@@ -39,7 +39,7 @@ public class CentrifugeguiGuiWindow extends ContainerScreen<CentrifugeguiGui.Gui
 		this.ySize = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/centrifugegui.png");
+	private static final ResourceLocation texture = new ResourceLocation("hafnium:textures/screens/centrifugegui.png");
 
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
