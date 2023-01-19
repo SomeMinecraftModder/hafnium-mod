@@ -28,7 +28,7 @@ public class HandGliderItemInHandTickProcedure {
 				}
 			}
 			if (entity.isSneaking()) {
-				if (Math.abs(entity.getMotion().getX()) + Math.abs(entity.getMotion().getZ()) < 10) {
+				if (Math.abs(entity.getMotion().getX()) + Math.abs(entity.getMotion().getZ()) < 0.6) {
 					entity.setMotion((entity.getMotion().getX() / 2 + entity.getMotion().getX()), (entity.getMotion().getY() + 0.05),
 							(entity.getMotion().getZ() / 2 + entity.getMotion().getZ()));
 				} else {

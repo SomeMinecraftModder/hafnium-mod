@@ -1,0 +1,7 @@
+newmtl Material
+Ka 1.0 1.0 1.0
+Kd 0.8 0.8 0.8
+Ks 0.062666 0.062666 0.053134
+map_Kd hafnium:blocks/dead_planks
+Ns 292.15686
+d 1.0
