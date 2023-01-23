@@ -2,42 +2,19 @@
   "_fv": 33,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StrenghtStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SpeedStick"
-      },
-      {
-        "value": "CUSTOM:HolmiumStick"
-      },
-      {
-        "value": "CUSTOM:HealStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "CUSTOM:HealStick"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:StrenghtStick"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:StickOfGod"
     },
     "name": "craft_stick_of_god",

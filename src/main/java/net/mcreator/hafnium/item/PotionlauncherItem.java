@@ -14,12 +14,12 @@ import net.minecraft.block.BlockState;
 import net.mcreator.hafnium.HafniumModElements;
 
 @HafniumModElements.ModElement.Tag
-public class UltimatuniumItem extends HafniumModElements.ModElement {
-	@ObjectHolder("hafnium:ultimatunium")
+public class PotionlauncherItem extends HafniumModElements.ModElement {
+	@ObjectHolder("hafnium:potionlauncher")
 	public static final Item block = null;
 
-	public UltimatuniumItem(HafniumModElements instance) {
-		super(instance, 261);
+	public PotionlauncherItem(HafniumModElements instance) {
+		super(instance, 268);
 	}
 
 	@Override
@@ -29,8 +29,8 @@ public class UltimatuniumItem extends HafniumModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.EPIC));
-			setRegistryName("ultimatunium");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("potionlauncher");
 		}
 
 		@Override
