@@ -110,6 +110,9 @@ public class HafniumModVariables {
 		public static final String DATA_NAME = "hafnium_mapvars";
 		public double clearlagnum = 0;
 		public double clearlagnum_in_s = 0;
+		public double lobby_x = 0;
+		public double lobby_y = 0;
+		public double lobby_z = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -123,12 +126,18 @@ public class HafniumModVariables {
 		public void read(CompoundNBT nbt) {
 			clearlagnum = nbt.getDouble("clearlagnum");
 			clearlagnum_in_s = nbt.getDouble("clearlagnum_in_s");
+			lobby_x = nbt.getDouble("lobby_x");
+			lobby_y = nbt.getDouble("lobby_y");
+			lobby_z = nbt.getDouble("lobby_z");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putDouble("clearlagnum", clearlagnum);
 			nbt.putDouble("clearlagnum_in_s", clearlagnum_in_s);
+			nbt.putDouble("lobby_x", lobby_x);
+			nbt.putDouble("lobby_y", lobby_y);
+			nbt.putDouble("lobby_z", lobby_z);
 			return nbt;
 		}
 

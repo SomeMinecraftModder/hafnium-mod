@@ -1,25 +1,17 @@
 
 package net.mcreator.hafnium.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.hafnium.HafniumModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @HafniumModElements.ModElement.Tag
 public class PotionlauncherItem extends HafniumModElements.ModElement {
+
 	@ObjectHolder("hafnium:potionlauncher")
 	public static final Item block = null;
 
 	public PotionlauncherItem(HafniumModElements instance) {
 		super(instance, 268);
+
 	}
 
 	@Override
@@ -28,6 +20,7 @@ public class PotionlauncherItem extends HafniumModElements.ModElement {
 	}
 
 	public static class ItemCustom extends Item {
+
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("potionlauncher");
@@ -48,5 +41,7 @@ public class PotionlauncherItem extends HafniumModElements.ModElement {
 		public boolean hasEffect(ItemStack itemstack) {
 			return true;
 		}
+
 	}
+
 }

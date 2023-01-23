@@ -2988,6 +2988,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "potionlauncher"
+    },
+    {
+      "name": "Setlobby",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setlobby",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetlobbyCmd",
+      "type": "command",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setlobby_cmd"
     }
   ],
   "variable_elements": [
@@ -3029,6 +3057,24 @@
     },
     {
       "name": "clearlagnum_in_s",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "lobby_x",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "lobby_y",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "lobby_z",
       "type": "number",
       "scope": "map",
       "value": "0"
