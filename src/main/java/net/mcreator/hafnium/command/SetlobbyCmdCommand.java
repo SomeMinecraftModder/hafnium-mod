@@ -40,8 +40,7 @@ public class SetlobbyCmdCommand {
 									Direction direction = entity.getHorizontalFacing();
 
 									SetlobbyProcedure.executeProcedure(Stream
-											.of(new AbstractMap.SimpleEntry<>("arguments", arguments),
-													new AbstractMap.SimpleEntry<>("entity", entity))
+											.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("arguments", arguments))
 											.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 									return 0;
 								})))));
