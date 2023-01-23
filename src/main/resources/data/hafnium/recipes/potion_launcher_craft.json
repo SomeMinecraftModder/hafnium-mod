@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "hafnium:uranium_block"
+    },
+    "1": {
+      "item": "hafnium:uranium_block"
+    },
+    "2": {
+      "item": "hafnium:uranium_block"
+    },
+    "3": {
+      "item": "hafnium:hafnium_block"
+    },
+    "4": {
+      "item": "minecraft:glass_bottle"
+    },
+    "5": {
+      "item": "minecraft:glass_bottle"
+    },
+    "6": {
+      "item": "hafnium:uranium_block"
+    },
+    "7": {
+      "item": "hafnium:uranium_block"
+    },
+    "8": {
+      "item": "hafnium:uranium_block"
+    }
+  },
+  "result": {
+    "item": "hafnium:potion_launcher",
+    "count": 1
+  }
+}

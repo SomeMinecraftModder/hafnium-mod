@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:HafniumBlock"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      },
+      {
+        "value": "CUSTOM:UraniumBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PotionLauncher"
+    },
+    "name": "potion_launcher_craft",
+    "namespace": "mod"
+  }
+}
