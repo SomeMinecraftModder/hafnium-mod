@@ -26,7 +26,7 @@
     "bulletPower": 0.5,
     "bulletDamage": 0.0,
     "bulletKnockback": 0,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "Items.GLASS_BOTTLE"
