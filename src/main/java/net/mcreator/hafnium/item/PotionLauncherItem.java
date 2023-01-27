@@ -200,7 +200,7 @@ public class PotionLauncherItem extends HafniumModElements.ModElement {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLook(1).x, entity.getLook(1).y, entity.getLook(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(true);
+		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		world.addEntity(entityarrow);
@@ -222,7 +222,7 @@ public class PotionLauncherItem extends HafniumModElements.ModElement {
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(0);
 		entityarrow.setKnockbackStrength(0);
-		entityarrow.setIsCritical(true);
+		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
