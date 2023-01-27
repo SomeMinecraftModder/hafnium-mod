@@ -20,7 +20,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 114,
+          "x": 123,
           "y": 44
         }
       },
@@ -34,7 +34,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 114,
+          "x": 123,
           "y": 62
         }
       },
@@ -48,7 +48,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 114,
+          "x": 123,
           "y": 80
         }
       },
@@ -61,7 +61,7 @@
             "falpha": 0.0
           },
           "name": "1",
-          "x": 105,
+          "x": 114,
           "y": 44
         }
       },
@@ -74,7 +74,7 @@
             "falpha": 0.0
           },
           "name": "2",
-          "x": 105,
+          "x": 114,
           "y": 62
         }
       },
@@ -87,7 +87,7 @@
             "falpha": 0.0
           },
           "name": "3",
-          "x": 105,
+          "x": 114,
           "y": 80
         }
       },
@@ -126,7 +126,20 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 114,
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fuel",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fuel",
+          "x": 96,
           "y": 107
         }
       }

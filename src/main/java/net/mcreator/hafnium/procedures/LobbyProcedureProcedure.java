@@ -1,7 +1,9 @@
 package net.mcreator.hafnium.procedures;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.hafnium.HafniumModVariables;
@@ -34,6 +36,9 @@ public class LobbyProcedureProcedure {
 						HafniumModVariables.MapVariables.get(world).lobby_y, HafniumModVariables.MapVariables.get(world).lobby_z, _ent.rotationYaw,
 						_ent.rotationPitch, Collections.emptySet());
 			}
+		}
+		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Vous \u00EAtes dans le lobby"), (false));
 		}
 	}
 }

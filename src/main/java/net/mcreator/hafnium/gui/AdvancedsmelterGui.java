@@ -121,11 +121,11 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 25) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 35, 25) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 43) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 35, 43) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 26, 61) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 35, 61) {
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 197, 43) {
 				@Override
@@ -133,7 +133,7 @@ public class AdvancedsmelterGui extends HafniumModElements.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 26, 88) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 35, 88) {
 			}));
 			int si;
 			int sj;

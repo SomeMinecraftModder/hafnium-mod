@@ -76,9 +76,10 @@ public class AdvancedsmelterGuiWindow extends ContainerScreen<AdvancedsmelterGui
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "1", 16, 24, -12829636);
-		this.font.drawString(ms, "2", 16, 42, -12829636);
-		this.font.drawString(ms, "3", 16, 60, -12829636);
+		this.font.drawString(ms, "1", 25, 24, -12829636);
+		this.font.drawString(ms, "2", 25, 42, -12829636);
+		this.font.drawString(ms, "3", 25, 60, -12829636);
+		this.font.drawString(ms, "Fuel", 7, 87, -12829636);
 	}
 
 	@Override
