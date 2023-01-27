@@ -1,0 +1,19 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Autosmelt",
+    "type": "WEAPON",
+    "rarity": "RARE",
+    "minLevel": 30,
+    "maxLevel": 100,
+    "damageModifier": 1,
+    "compatibleEnchantments": [],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": false
+  }
+}
