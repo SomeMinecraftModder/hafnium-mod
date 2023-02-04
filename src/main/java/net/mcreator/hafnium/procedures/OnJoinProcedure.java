@@ -1,9 +1,20 @@
 package net.mcreator.hafnium.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.hafnium.HafniumMod;
+
+import java.util.Map;
+import java.util.HashMap;
 
 public class OnJoinProcedure {
-
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -30,12 +41,9 @@ public class OnJoinProcedure {
 				HafniumMod.LOGGER.warn("Failed to load dependency entity for procedure OnJoin!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("\u00A76\u00A7lBienvenue sur Hafnium!"), (false));
 		}
 	}
-
 }
