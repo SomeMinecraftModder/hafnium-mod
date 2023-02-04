@@ -1354,54 +1354,6 @@
       }
     },
     {
-      "name": "Spawnprotection",
-      "type": "procedure",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawnprotection",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Spawnprotectionplace",
-      "type": "procedure",
-      "sortid": 136,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawnprotectionplace",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
       "name": "Manatab",
       "type": "tab",
       "sortid": 137,
@@ -3237,28 +3189,28 @@
   "language_map": {
     "en_us": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
       "itemGroup.tabmanatab": "Mana",
-      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.cristalized_emerald_pickaxe": "Cristalized_Emerald Pickaxe",
+      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "advancements.tuxblock.title": "Tux",
       "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "advancements.tuxblock.title": "Tux",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -3329,6 +3281,7 @@
       "block.hafnium.manacristalisator": "Mana Cristalisator",
       "item.hafnium.potion_launcher": "Potion Launcher",
       "block.hafnium.mana_wood_leaves": "Mana wood Leaves",
+      "enchantment.hafnium.autosmelt": "Autosmelt",
       "block.hafnium.cuprite_ore": "Cuprite Ore",
       "item.hafnium.hafnium_ingot": "Hafnium",
       "item.hafnium.cristalized_emerald_shovel": "Cristalized_Emerald Shovel",
@@ -3390,28 +3343,28 @@
     },
     "es_es": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
+      "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Uranium Ore",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
       "itemGroup.tabmanatab": "Mana",
-      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.cristalized_emerald_pickaxe": "Cristalized_Emerald Pickaxe",
+      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "advancements.tuxblock.title": "Tux",
       "item.hafnium.fiftypercenturanium": "50% Uranium",
+      "advancements.tuxblock.title": "Tux",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",
@@ -3544,28 +3497,28 @@
     },
     "fr_fr": {
       "block.hafnium.mana_wood_button": "Mana_wood Button",
-      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "item.hafnium.cristalized_emerald_armor_helmet": "Cristalized_Emerald Helmet",
+      "block.hafnium.cristalized_emerald_block": "Block of Cristalized_Emerald",
       "advancements.eathafnium.title": "Emilien",
       "block.hafnium.uranium_ore": "Minerais d\u0027Uranium",
       "item.hafnium.stabilized_mana": "Stabilized Mana",
       "itemGroup.tabmanatab": "Mana",
-      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.cristalized_emerald_pickaxe": "Cristalized_Emerald Pickaxe",
+      "biome.hafnium.rockyplain": "Rocky plain",
       "item.hafnium.holnium_armor_chestplate": "Holnium Chestplate",
       "item.hafnium.heal_stick": "Heal Stick",
       "block.hafnium.advanced_casing": "Advanced Casing",
       "item.hafnium.amethyst_sword": "Amethyst Sword",
       "block.hafnium.hafnium_block": "Block of Hafnium",
-      "key.hafnium.jobguiopen": "Open Jobs menu",
       "item.hafnium.negativemana": "Negativemana",
+      "key.hafnium.jobguiopen": "Open Jobs menu",
       "block.hafnium.cuprite_block": "Block of Cuprite",
       "item.hafnium.corruptedsoul": "Corrupted soul",
       "item.hafnium.amethyst_axe": "Amethyst Axe",
       "block.hafnium.mana_wood_stairs": "Mana_wood Stairs",
       "block.hafnium.darkstone": "Darkstone",
-      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "advancements.tuxblock.title": "Tux",
+      "item.hafnium.fiftypercenturanium": "50% Uranium",
       "item.hafnium.basic_unclaim_finder": "Basic Unclaim Finder",
       "item.hafnium.dark_lord_spawn_egg": "Dark Lord Spawn Egg",
       "block.hafnium.mana_leave": "Mana Leave",

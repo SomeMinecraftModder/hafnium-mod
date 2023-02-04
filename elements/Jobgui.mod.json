@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 248,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -13,14 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Farmer: level <VAR:integer:job_farmer_lvl>",
+          "text": " <VAR:integer:job_farmer_lvl>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Farmer: level <VAR:integer:job_farmer_lvl>",
-          "x": 132,
-          "y": 71
+          "name": " <VAR:integer:job_farmer_lvl>",
+          "x": 96,
+          "y": 98
         }
       },
       {
@@ -32,20 +32,40 @@
             "falpha": 0.0
           },
           "name": "Jobs",
-          "x": 132,
+          "x": 204,
           "y": 44
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Miner: level <VAR:integer:job_miner_lvl>",
+          "text": "<VAR:integer:job_miner_lvl>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Miner: level <VAR:integer:job_miner_lvl>",
+          "name": "<VAR:integer:job_miner_lvl>",
+          "x": 213,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "logo_farmer.png",
+          "use1Xscale": false,
+          "name": "logo_farmer.png",
           "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "logo_mineur.png",
+          "use1Xscale": false,
+          "name": "logo_mineur.png",
+          "x": 285,
           "y": 80
         }
       }

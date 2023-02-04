@@ -33,7 +33,7 @@ public class JobguiGuiWindow extends ContainerScreen<JobguiGui.GuiContainerMod> 
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.xSize = 176;
+		this.xSize = 248;
 		this.ySize = 166;
 	}
 
@@ -55,6 +55,13 @@ public class JobguiGuiWindow extends ContainerScreen<JobguiGui.GuiContainerMod> 
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("hafnium:textures/screens/logo_farmer.png"));
+		this.blit(ms, this.guiLeft + 42, this.guiTop + 43, 0, 0, 16, 16, 16, 16);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("hafnium:textures/screens/logo_mineur.png"));
+		this.blit(ms, this.guiLeft + 195, this.guiTop + 43, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -74,11 +81,11 @@ public class JobguiGuiWindow extends ContainerScreen<JobguiGui.GuiContainerMod> 
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Farmer: level " + (int) ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new HafniumModVariables.PlayerVariables())).job_farmer_lvl) + "", 6, 34, -12829636);
-		this.font.drawString(ms, "Jobs", 6, 7, -12829636);
-		this.font.drawString(ms, "Miner: level " + (int) ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new HafniumModVariables.PlayerVariables())).job_miner_lvl) + "", 6, 43, -12829636);
+		this.font.drawString(ms, " " + (int) ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new HafniumModVariables.PlayerVariables())).job_farmer_lvl) + "", 6, 61, -12829636);
+		this.font.drawString(ms, "Jobs", 114, 7, -12829636);
+		this.font.drawString(ms, "" + (int) ((entity.getCapability(HafniumModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new HafniumModVariables.PlayerVariables())).job_miner_lvl) + "", 123, 61, -12829636);
 	}
 
 	@Override

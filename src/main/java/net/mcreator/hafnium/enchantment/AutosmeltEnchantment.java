@@ -1,9 +1,17 @@
 
 package net.mcreator.hafnium.enchantment;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.util.DamageSource;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.enchantment.Enchantment;
+
+import net.mcreator.hafnium.HafniumModElements;
+
 @HafniumModElements.ModElement.Tag
 public class AutosmeltEnchantment extends HafniumModElements.ModElement {
-
 	@ObjectHolder("hafnium:autosmelt")
 	public static final Enchantment enchantment = null;
 
@@ -17,7 +25,6 @@ public class AutosmeltEnchantment extends HafniumModElements.ModElement {
 	}
 
 	public static class CustomEnchantment extends Enchantment {
-
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.RARE, EnchantmentType.WEAPON, slots);
 		}
@@ -61,7 +68,5 @@ public class AutosmeltEnchantment extends HafniumModElements.ModElement {
 		public boolean canVillagerTrade() {
 			return false;
 		}
-
 	}
-
 }
