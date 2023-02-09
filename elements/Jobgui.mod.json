@@ -19,7 +19,7 @@
             "falpha": 0.0
           },
           "name": " <VAR:integer:job_farmer_lvl>",
-          "x": 96,
+          "x": 132,
           "y": 98
         }
       },
@@ -45,8 +45,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:job_miner_lvl>",
-          "x": 213,
-          "y": 98
+          "x": 132,
+          "y": 80
         }
       },
       {
@@ -55,8 +55,8 @@
           "image": "logo_farmer.png",
           "use1Xscale": false,
           "name": "logo_farmer.png",
-          "x": 132,
-          "y": 80
+          "x": 114,
+          "y": 89
         }
       },
       {
@@ -65,8 +65,8 @@
           "image": "logo_mineur.png",
           "use1Xscale": false,
           "name": "logo_mineur.png",
-          "x": 285,
-          "y": 80
+          "x": 114,
+          "y": 71
         }
       }
     ],

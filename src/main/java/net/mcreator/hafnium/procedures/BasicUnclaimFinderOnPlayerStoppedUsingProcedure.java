@@ -3,6 +3,8 @@ package net.mcreator.hafnium.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
@@ -11,7 +13,6 @@ import net.mcreator.hafnium.block.SmelterBlock;
 import net.mcreator.hafnium.block.ManacristalisatorBlock;
 import net.mcreator.hafnium.block.CentrifugeBlock;
 import net.mcreator.hafnium.block.AdvancedsmeltercontrolerBlock;
-import net.mcreator.hafnium.block.AdvancedbrickBlock;
 import net.mcreator.hafnium.HafniumMod;
 
 import java.util.Map;
@@ -80,7 +81,8 @@ public class BasicUnclaimFinderOnPlayerStoppedUsingProcedure {
 					if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == AdvancedsmeltercontrolerBlock.block) {
 						level = (level + 1);
 					}
-					if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == AdvancedbrickBlock.block) {
+					if (BlockTags.getCollection().getTagByID(new ResourceLocation("forge:unclaim_finder"))
+							.contains((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock())) {
 						level = (level + 1);
 					}
 					sz = (sz + 1);

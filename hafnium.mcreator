@@ -3080,6 +3080,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "discord_cmd"
+    },
+    {
+      "name": "UnclaimFinder",
+      "type": "tag",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "unclaim_finder"
     }
   ],
   "variable_elements": [
